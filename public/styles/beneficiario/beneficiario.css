@@ -1,0 +1,72 @@
+.forms_wrapper .general_form .forms {
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 5px;
+    width: 100% !important;
+}
+.general_form .inputs {
+    width: 85% !important;
+}
+
+.inputs ul li label{
+    text-align: right !important;
+}
+
+.input_wrapper {
+    width: 250px;
+}
+
+.button {
+   float: right;
+}
+
+.inputs ul li label {
+    width: 130px;
+}
+
+.search_form fieldset {
+    padding: 0 0 15px 0;
+    margin: 15px 0 0;
+}
+
+.module .module_top h5 {
+    float: left;
+    padding: 0 0 0 10px;
+}
+
+.module .module_top .add_module {
+    float: right;
+    padding: 0 8px 0 15px;
+}
+
+.inputs.ano .input_wrapper {
+    width: 100px;
+}
+
+#formacao-profissional {
+    display: none;
+}
+
+#busca-beneficiario {
+    width: 825px;
+}
+
+#busca-beneficiario label {
+    width: 140px;
+}
+
+#busca-beneficiario .input_wrapper {
+    width: 200px;
+}
+
+#busca-beneficiario .inputs {
+    width: 80% !important;
+}
+
+#busca-beneficiario #button {
+    float: right;
+}
+
+#codigo-cadastro {
+    margin: -15px 0 10px 0px
+}

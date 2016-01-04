@@ -1,0 +1,14 @@
+.forms_wrapper .general_form .forms {
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 5px;
+    width: 98% !important;
+}
+
+.general_form .inputs {
+    width: 81% !important;
+}
+
+.button {
+   float: right;
+}

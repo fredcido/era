@@ -1,0 +1,101 @@
+.forms_wrapper .general_form .forms {
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 5px;
+    width: 100% !important;
+}
+.general_form .inputs {
+    width: 85% !important;
+}
+
+.search_form fieldset {
+    padding: 0 0 15px 0;
+    margin: 15px 0 0;
+}
+
+.input_wrapper {
+    width: 262px;
+}
+
+.medium_input{
+    width: 126px !important;
+}
+
+.short_input {
+    width: 70px !important;
+}
+
+.large_input {
+    width: 100% !important;
+}
+
+.large_input textarea {
+    width: 95% !important;
+    background: none;
+    border: none;
+    resize: none;
+}
+
+.inputs ul li label{
+    text-align: right !important;
+}
+
+.button {
+   float: right;
+}
+
+.textarea_wrapper {
+    height: 68px;
+}
+
+.table_wrapper {
+    width: 890px;
+}
+
+.table_wrapper td, .table_wrapper th {
+    padding: 0 5px !important;
+}
+
+.forms {
+    width: 100% !important;
+}
+
+div.inputs {
+    float: left !important;
+    width: auto !important;
+}
+
+.module_top h5 {
+    float: left;
+}
+
+div.input-button {
+    float: right !important;
+}
+
+.modules {
+    overflow: hidden;
+}
+
+.module_bottom {
+    overflow: hidden;
+}
+
+.module_bottom .module_top h5 {
+    padding-left: 10px;
+}
+
+.list-option {
+    width: 100%;
+}
+
+.list-option div {
+    float: left;
+    width: 32%;
+    padding-right: 8px;
+    overflow: hidden;
+}
+
+.list-option label {
+    width: auto !important;
+}

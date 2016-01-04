@@ -1,0 +1,86 @@
+.forms_wrapper .general_form .forms {
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 5px;
+    width: 100% !important;
+}
+.general_form .inputs {
+    width: 84% !important;
+}
+
+.search_form fieldset {
+    padding: 0 0 15px 0;
+    margin: 15px 0 0;
+}
+
+.input_wrapper {
+    width: 250px;
+}
+
+.medium_input{
+    width: 126px !important;
+}
+
+.inputs ul li label{
+    text-align: right !important;
+}
+.button {
+   float: right;
+}
+
+.textarea_wrapper {
+    height: 50px !important;
+    width: 688px !important;
+}
+
+.search_form label {
+    width: 126px !important;
+}
+
+.module .module_top .add_module {
+    float: right;
+    padding: 0 8px 0 15px;
+}
+
+.module .module_top h5 {
+    float: left;
+    padding: 0 0 0 10px;
+}
+
+.inputs.ano .input_wrapper {
+    width: 100px;
+}
+
+.tipo_volume{
+    width: 60px !important;
+}
+.sales{
+    width: 77px !important;
+}
+
+.medium{
+    width: 71px !important;
+}
+
+.ul-container {
+    width: 100%;
+    height: 200px;
+    overflow: auto;
+    list-style: none;
+}
+
+.ul-container li {
+    padding: 0;
+    width: 100%;
+    border: 1px dashed #ccc;
+    border-width: 0 0 1px 0;
+}
+
+.ul-container li label {
+    text-align: left !important;
+    width: auto !important;
+}
+
+.none{
+    display: none;
+}

@@ -1,0 +1,34 @@
+ <h1><?php echo $this->t( 'Relatorio Grupo idade participante', 582 ); ?> </h1>
+ 
+ <p>
+    <?php 
+
+	if ( !empty( $this->data['date_start'] ) ) :
+	    echo $this->t( 'Periodo', 549 ) . ': ' . $this->data['date_start'] . ' ' . $this->t( 'até', 548 ) . ' ' . $this->data['date_finish'];
+	endif;
+
+    ?>
+ </p>
+ 
+ <div class="container-report">
+     
+     <table class="summary">
+	 <tr>
+	     <th>
+		 <label><?php echo $this->t( 'Quantidade participantes', 186 ); ?></label>
+	     </th>
+	     <td>
+		 <span class="qtde-summary"><?php echo $this->report['grupo_idade']['total']; ?></span>
+	     </td>
+	     <th>
+		 <label><?php echo $this->t( 'Data saida de dados', 569 ); ?></label>
+	     </th>
+	     <td>
+		 <span class="qtde-summary"><?php echo date( 'd/m/Y' ); ?></span>
+	     </td>
+	 </tr>
+     </table>
+
+ </div>
+
+<?php require_once __DIR__ . '/../body/grupo_idade.php'; ?>

@@ -1,0 +1,53 @@
+.forms_wrapper .general_form .forms {
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 5px;
+    width: 98% !important;
+}
+
+.general_form .inputs {
+    width: 81% !important;
+}
+
+.button {
+   float: right;
+}
+
+.float-module {
+    float: left;
+    width: 48% !important;
+    margin: 5px 7.5px;
+}
+
+.module_top h5 {
+    padding-left: 5px;
+}
+
+.module_bottom {
+    overflow: hidden;
+}
+
+.float-module .inputs {
+    float: right;
+    width: 66% !important;
+}
+
+.itens-floating div {
+    float: left;
+    width: 281px;
+    padding: 3px 0;
+}
+
+.itens-floating div label {
+    width: 100%;
+    white-space: normal;
+}
+
+.itens-floating div input {
+    float: right;
+    margin-right: 30px;
+}
+
+.forms_wrapper .general_form .forms {
+    border: none !important;
+}

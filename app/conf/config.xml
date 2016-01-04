@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <banco>
+        <driver>mysql</driver>
+	<!--<host>mysql.gotisistemas.com.br</host>
+        <usr>erasys</usr>
+        <pwd>sysare</pwd>-->
+	<host>127.0.0.1</host>
+        <usr>root</usr>
+        <pwd>root</pwd>
+        <base>bd_erasys</base>
+        <charset>utf-8</charset>
+    </banco>
+    <route>
+        <modules>modules</modules>
+        <default>
+            <module>default</module>
+            <controller>index</controller>
+            <action>index</action>
+        </default>
+    </route>
+    <geral>
+        <layout>
+            <render>1</render>
+            <path>default/layout/main.php</path>
+        </layout>
+        <appname>Era - Sysweb</appname>
+        <charset>utf-8</charset>
+        <debug>1</debug>
+        <manutencao>0</manutencao>
+        <grid>modern</grid>
+    </geral>
+    <php>
+        <display_errors>1</display_errors>
+        <date.timezone>Asia/Tokyo</date.timezone>
+        <default_charset>utf-8</default_charset>
+    </php>
+</config>

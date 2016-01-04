@@ -1,0 +1,49 @@
+.forms_wrapper .general_form .forms {
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 5px;
+    width: 100% !important;
+}
+.general_form .inputs {
+    width: 85% !important;
+}
+
+.search_form fieldset {
+    padding: 0 0 15px 0;
+    margin: 15px 0 0;
+}
+
+.input_wrapper {
+    width: 262px;
+}
+
+.medium_input{
+    width: 126px !important;
+}
+
+.inputs ul li label{
+    text-align: right !important;
+}
+.button {
+   float: right;
+}
+
+.textarea_wrapper {
+    height: 68px;
+}
+
+#list-registros th {
+    background: #EDEAEA !important;
+}
+
+#list-registros {
+    overflow-x: auto;
+}
+
+.table_wrapper {
+    width: 904px;
+}
+
+.table_wrapper td, .table_wrapper th {
+    padding: 0 5px !important;
+}

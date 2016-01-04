@@ -1,0 +1,2640 @@
+Data: 06/06/2015 11:08:18
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 171
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    tq.title,
+		    ta.fk_id_text_question, 
+		    COUNT(ta.id_text_answer) count,
+		    SUM(ta.answer) sum, 
+		    AVG(ta.answer) avg
+		FROM text_answer ta
+		INNER JOIN text_question tq ON
+		    tq.id_text_question = ta.fk_id_text_question
+		WHERE tq.report != 'N'
+		    AND tq.class IN ('numeric', 'money')
+		    AND ta.fk_id_questionnaire IN ()
+		GROUP BY ta.fk_id_text_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 33
+                    [function] => calcTotalText
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>240288</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>243976</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0022</td><td bgcolor='#eeeeec' align='right'>256712</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0024</td><td bgcolor='#eeeeec' align='right'>278904</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0026</td><td bgcolor='#eeeeec' align='right'>282680</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0033</td><td bgcolor='#eeeeec' align='right'>356728</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0033</td><td bgcolor='#eeeeec' align='right'>357064</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0034</td><td bgcolor='#eeeeec' align='right'>364432</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0128</td><td bgcolor='#eeeeec' align='right'>509536</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcTotalText(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>33</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0128</td><td bgcolor='#eeeeec' align='right'>510128</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>171</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0128</td><td bgcolor='#eeeeec' align='right'>511784</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 06/06/2015 11:08:18
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 191
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    COUNT(oa.fk_id_options_question) cont,
+		    oa.fk_id_option_question, 
+		    oa.fk_id_options_question
+		FROM options_answer oa
+		WHERE oa.fk_id_questionnaire IN ()
+		GROUP BY oa.fk_id_options_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 38
+                    [function] => calcCountOptions
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>240288</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>243976</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0022</td><td bgcolor='#eeeeec' align='right'>256712</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0024</td><td bgcolor='#eeeeec' align='right'>278904</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0026</td><td bgcolor='#eeeeec' align='right'>282680</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0033</td><td bgcolor='#eeeeec' align='right'>356728</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0033</td><td bgcolor='#eeeeec' align='right'>357064</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0034</td><td bgcolor='#eeeeec' align='right'>364432</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0145</td><td bgcolor='#eeeeec' align='right'>516744</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcCountOptions(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>38</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0145</td><td bgcolor='#eeeeec' align='right'>517168</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>191</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0146</td><td bgcolor='#eeeeec' align='right'>518488</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 06/06/2015 11:08:37
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 171
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    tq.title,
+		    ta.fk_id_text_question, 
+		    COUNT(ta.id_text_answer) count,
+		    SUM(ta.answer) sum, 
+		    AVG(ta.answer) avg
+		FROM text_answer ta
+		INNER JOIN text_question tq ON
+		    tq.id_text_question = ta.fk_id_text_question
+		WHERE tq.report != 'N'
+		    AND tq.class IN ('numeric', 'money')
+		    AND ta.fk_id_questionnaire IN ()
+		GROUP BY ta.fk_id_text_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 33
+                    [function] => calcTotalText
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>240672</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>244360</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0031</td><td bgcolor='#eeeeec' align='right'>257096</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0033</td><td bgcolor='#eeeeec' align='right'>279272</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0034</td><td bgcolor='#eeeeec' align='right'>283048</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0046</td><td bgcolor='#eeeeec' align='right'>357096</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0046</td><td bgcolor='#eeeeec' align='right'>357432</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0053</td><td bgcolor='#eeeeec' align='right'>397728</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0216</td><td bgcolor='#eeeeec' align='right'>542832</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcTotalText(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>33</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0216</td><td bgcolor='#eeeeec' align='right'>543424</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>171</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0216</td><td bgcolor='#eeeeec' align='right'>545080</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 06/06/2015 11:08:37
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 191
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    COUNT(oa.fk_id_options_question) cont,
+		    oa.fk_id_option_question, 
+		    oa.fk_id_options_question
+		FROM options_answer oa
+		WHERE oa.fk_id_questionnaire IN ()
+		GROUP BY oa.fk_id_options_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 38
+                    [function] => calcCountOptions
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>240672</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>244360</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0031</td><td bgcolor='#eeeeec' align='right'>257096</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0033</td><td bgcolor='#eeeeec' align='right'>279272</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0034</td><td bgcolor='#eeeeec' align='right'>283048</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0046</td><td bgcolor='#eeeeec' align='right'>357096</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0046</td><td bgcolor='#eeeeec' align='right'>357432</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0053</td><td bgcolor='#eeeeec' align='right'>397728</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0225</td><td bgcolor='#eeeeec' align='right'>547208</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcCountOptions(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>38</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0226</td><td bgcolor='#eeeeec' align='right'>547632</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>191</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0226</td><td bgcolor='#eeeeec' align='right'>548952</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 06/06/2015 11:08:51
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 171
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    tq.title,
+		    ta.fk_id_text_question, 
+		    COUNT(ta.id_text_answer) count,
+		    SUM(ta.answer) sum, 
+		    AVG(ta.answer) avg
+		FROM text_answer ta
+		INNER JOIN text_question tq ON
+		    tq.id_text_question = ta.fk_id_text_question
+		WHERE tq.report != 'N'
+		    AND tq.class IN ('numeric', 'money')
+		    AND ta.fk_id_questionnaire IN ()
+		GROUP BY ta.fk_id_text_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 33
+                    [function] => calcTotalText
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>240672</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>244360</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0037</td><td bgcolor='#eeeeec' align='right'>257096</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0039</td><td bgcolor='#eeeeec' align='right'>279272</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0040</td><td bgcolor='#eeeeec' align='right'>283048</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0055</td><td bgcolor='#eeeeec' align='right'>357096</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0055</td><td bgcolor='#eeeeec' align='right'>357432</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0069</td><td bgcolor='#eeeeec' align='right'>368328</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0206</td><td bgcolor='#eeeeec' align='right'>513432</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcTotalText(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>33</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0206</td><td bgcolor='#eeeeec' align='right'>514024</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>171</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0206</td><td bgcolor='#eeeeec' align='right'>515680</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 06/06/2015 11:08:51
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 191
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    COUNT(oa.fk_id_options_question) cont,
+		    oa.fk_id_option_question, 
+		    oa.fk_id_options_question
+		FROM options_answer oa
+		WHERE oa.fk_id_questionnaire IN ()
+		GROUP BY oa.fk_id_options_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 38
+                    [function] => calcCountOptions
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>240672</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>244360</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0037</td><td bgcolor='#eeeeec' align='right'>257096</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0039</td><td bgcolor='#eeeeec' align='right'>279272</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0040</td><td bgcolor='#eeeeec' align='right'>283048</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0055</td><td bgcolor='#eeeeec' align='right'>357096</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0055</td><td bgcolor='#eeeeec' align='right'>357432</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0069</td><td bgcolor='#eeeeec' align='right'>368328</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0216</td><td bgcolor='#eeeeec' align='right'>517808</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcCountOptions(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>38</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0216</td><td bgcolor='#eeeeec' align='right'>518232</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>191</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0216</td><td bgcolor='#eeeeec' align='right'>519552</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 06/06/2015 11:09:12
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 171
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    tq.title,
+		    ta.fk_id_text_question, 
+		    COUNT(ta.id_text_answer) count,
+		    SUM(ta.answer) sum, 
+		    AVG(ta.answer) avg
+		FROM text_answer ta
+		INNER JOIN text_question tq ON
+		    tq.id_text_question = ta.fk_id_text_question
+		WHERE tq.report != 'N'
+		    AND tq.class IN ('numeric', 'money')
+		    AND ta.fk_id_questionnaire IN ()
+		GROUP BY ta.fk_id_text_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 33
+                    [function] => calcTotalText
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>240784</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>244472</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0032</td><td bgcolor='#eeeeec' align='right'>257208</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0034</td><td bgcolor='#eeeeec' align='right'>279384</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0035</td><td bgcolor='#eeeeec' align='right'>283264</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0047</td><td bgcolor='#eeeeec' align='right'>357312</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0047</td><td bgcolor='#eeeeec' align='right'>357648</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0048</td><td bgcolor='#eeeeec' align='right'>365024</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0222</td><td bgcolor='#eeeeec' align='right'>510128</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcTotalText(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>33</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0223</td><td bgcolor='#eeeeec' align='right'>510720</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>171</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0223</td><td bgcolor='#eeeeec' align='right'>512376</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 06/06/2015 11:09:12
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 191
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    COUNT(oa.fk_id_options_question) cont,
+		    oa.fk_id_option_question, 
+		    oa.fk_id_options_question
+		FROM options_answer oa
+		WHERE oa.fk_id_questionnaire IN ()
+		GROUP BY oa.fk_id_options_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 38
+                    [function] => calcCountOptions
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>240784</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>244472</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0032</td><td bgcolor='#eeeeec' align='right'>257208</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0034</td><td bgcolor='#eeeeec' align='right'>279384</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0035</td><td bgcolor='#eeeeec' align='right'>283264</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0047</td><td bgcolor='#eeeeec' align='right'>357312</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0047</td><td bgcolor='#eeeeec' align='right'>357648</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0048</td><td bgcolor='#eeeeec' align='right'>365024</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0232</td><td bgcolor='#eeeeec' align='right'>514504</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcCountOptions(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>38</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0232</td><td bgcolor='#eeeeec' align='right'>514928</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>191</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0232</td><td bgcolor='#eeeeec' align='right'>516248</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 06/06/2015 11:09:18
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 171
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    tq.title,
+		    ta.fk_id_text_question, 
+		    COUNT(ta.id_text_answer) count,
+		    SUM(ta.answer) sum, 
+		    AVG(ta.answer) avg
+		FROM text_answer ta
+		INNER JOIN text_question tq ON
+		    tq.id_text_question = ta.fk_id_text_question
+		WHERE tq.report != 'N'
+		    AND tq.class IN ('numeric', 'money')
+		    AND ta.fk_id_questionnaire IN ()
+		GROUP BY ta.fk_id_text_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 33
+                    [function] => calcTotalText
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY ta.fk_id_text_question' at line 12 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>240792</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>244480</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0033</td><td bgcolor='#eeeeec' align='right'>257216</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0035</td><td bgcolor='#eeeeec' align='right'>279392</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0036</td><td bgcolor='#eeeeec' align='right'>283272</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0046</td><td bgcolor='#eeeeec' align='right'>357320</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0046</td><td bgcolor='#eeeeec' align='right'>357656</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0047</td><td bgcolor='#eeeeec' align='right'>364984</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0133</td><td bgcolor='#eeeeec' align='right'>510088</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcTotalText(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>33</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0133</td><td bgcolor='#eeeeec' align='right'>510680</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>171</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0133</td><td bgcolor='#eeeeec' align='right'>512336</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 06/06/2015 11:09:18
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+    [string:Exception:private] => 
+    [code:protected] => 42000
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 279
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 279
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/dao/Questionnaire.php
+                    [line] => 191
+                    [function] => queryResult
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => SELECT 
+		    COUNT(oa.fk_id_options_question) cont,
+		    oa.fk_id_option_question, 
+		    oa.fk_id_options_question
+		FROM options_answer oa
+		WHERE oa.fk_id_questionnaire IN ()
+		GROUP BY oa.fk_id_options_question
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/QuestionnaireReport.php
+                    [line] => 38
+                    [function] => calcCountOptions
+                    [class] => Model_DAO_Questionnaire
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/relatorio/controller/Me.php
+                    [line] => 320
+                    [function] => fetchReport
+                    [class] => Model_BO_QuestionnaireReport
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [function] => reportquestionnaireAction
+                    [class] => Relatorio_Controller_Me
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Relatorio_Controller_Me Object
+                                        (
+                                            [_bo:protected] => Model_BO_SnapshotReport Object
+                                                (
+                                                    [_dao:protected] => Model_DAO_Snapshot Object
+                                                        (
+                                                            [_table:protected] => snapshot
+                                                            [_class:protected] => Model_VO_Snapshot
+                                                            [_cnn:protected] => PDO Object
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_activeSheet:protected] => 
+                                                    [_valid:protected] => 1
+                                                    [_error:protected] => 
+                                                    [_data:protected] => 
+                                                )
+
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [relatorio_mode] => 1
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => relatorio
+                                                            [controller] => me
+                                                            [action] => reportquestionnaire
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/relatorio/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => reportquestionnaireAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [9] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42000
+            [1] => 1064
+            [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')
+		GROUP BY oa.fk_id_options_question' at line 6 in /var/www/era/project/app/ilo/model/DAO.php on line <i>279</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>240792</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>244480</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0033</td><td bgcolor='#eeeeec' align='right'>257216</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0035</td><td bgcolor='#eeeeec' align='right'>279392</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0036</td><td bgcolor='#eeeeec' align='right'>283272</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0046</td><td bgcolor='#eeeeec' align='right'>357320</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0046</td><td bgcolor='#eeeeec' align='right'>357656</td><td bgcolor='#eeeeec'>Relatorio_Controller_Me->reportquestionnaireAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0047</td><td bgcolor='#eeeeec' align='right'>364984</td><td bgcolor='#eeeeec'>Model_BO_QuestionnaireReport->fetchReport(  )</td><td title='/var/www/era/project/app/modules/relatorio/controller/Me.php' bgcolor='#eeeeec'>../Me.php<b>:</b>320</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0140</td><td bgcolor='#eeeeec' align='right'>514464</td><td bgcolor='#eeeeec'>Model_DAO_Questionnaire->calcCountOptions(  )</td><td title='/var/www/era/project/app/modules/model/bo/QuestionnaireReport.php' bgcolor='#eeeeec'>../QuestionnaireReport.php<b>:</b>38</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0140</td><td bgcolor='#eeeeec' align='right'>514888</td><td bgcolor='#eeeeec'>ILO_Model_DAO->queryResult(  )</td><td title='/var/www/era/project/app/modules/model/dao/Questionnaire.php' bgcolor='#eeeeec'>../Questionnaire.php<b>:</b>191</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>11</td><td bgcolor='#eeeeec' align='center'>0.0140</td><td bgcolor='#eeeeec' align='right'>516208</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>279</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+

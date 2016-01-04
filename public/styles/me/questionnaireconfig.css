@@ -1,0 +1,42 @@
+.forms {
+    width: 100% !important;
+}
+
+div.inputs {
+    float: left !important;
+    width: auto !important;
+}
+
+.module_top h5 {
+    float: left;
+}
+
+div.input-button {
+    float: right !important;
+}
+
+.modules {
+    overflow: hidden;
+}
+
+.module_bottom {
+    overflow: hidden;
+}
+
+.remove_module {
+    background: url("../../layout/css/layout/action4.gif") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
+}
+
+.up_module {
+    background: url("../../layout/css/layout/move1.gif") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
+    text-indent: -9999px;
+}
+
+.down_module {
+    background: url("../../layout/css/layout/move2.gif") no-repeat scroll left center rgba(0, 0, 0, 0) !important;
+    text-indent: -9999px;
+}
+
+.module_bottom .module_top h5 {
+    padding-left: 10px;
+}

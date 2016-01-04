@@ -1,0 +1,1793 @@
+Data: 07/05/2015 09:40:21
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fk_id_course' in 'where clause'
+    [string:Exception:private] => 
+    [code:protected] => 42S22
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 209
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 209
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [:w_fk_id_course] => 1
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/treinamento/controller/Treinamento.php
+                    [line] => 550
+                    [function] => fetchAll
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => name_unit
+                                )
+
+                            [1] => Array
+                                (
+                                    [fk_id_course] => 1
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [function] => unidadescompentenciaAction
+                    [class] => Treinamento_Controller_Treinamento
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Treinamento_Controller_Treinamento Object
+                                        (
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => turma
+                                                            [2] => endereco
+                                                            [3] => saveendereco
+                                                            [4] => savegeral
+                                                            [5] => saveturma
+                                                            [6] => saveteste
+                                                            [7] => saveparticipantes
+                                                            [8] => subdistritos
+                                                            [9] => sukus
+                                                            [10] => participantes
+                                                            [11] => unidadescompentencia
+                                                            [12] => listparticipantes
+                                                            [13] => removeparticipantes
+                                                            [14] => buscaparticipantes
+                                                            [15] => teste
+                                                            [16] => searchtest
+                                                            [17] => assessment
+                                                            [18] => saveassessment
+                                                            [19] => saveevolucao
+                                                            [20] => searchassessment
+                                                            [21] => finaliza
+                                                            [22] => evolucao
+                                                            [23] => savefinaliza
+                                                            [24] => testclass
+                                                            [25] => searchtestclass
+                                                            [26] => savetestclass
+                                                            [27] => practicaltraining
+                                                            [28] => searchpracticaltraining
+                                                            [29] => savepracticaltraining
+                                                            [30] => attendence
+                                                            [31] => searchattendence
+                                                            [32] => saveattendence
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                            [_abas:protected] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [label] => Informação Geral
+                                                            [id] => 51
+                                                            [url] => /treinamento/treinamento/cadastro/id/
+                                                            [liberado] => 1
+                                                            [action] => cadastro
+                                                            [selected] => 1
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [label] => Endereço
+                                                            [id] => 53
+                                                            [url] => /treinamento/treinamento/endereco/id/
+                                                            [liberado] => 
+                                                            [action] => endereco
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [label] => Curso da turma
+                                                            [id] => 158
+                                                            [url] => /treinamento/treinamento/turma/id/
+                                                            [liberado] => 
+                                                            [action] => turma
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [3] => Array
+                                                        (
+                                                            [label] => Lista de participante
+                                                            [id] => 159
+                                                            [url] => /treinamento/treinamento/participantes/id/
+                                                            [liberado] => 
+                                                            [action] => participantes
+                                                            [require] => fk_id_course
+                                                        )
+
+                                                    [4] => Array
+                                                        (
+                                                            [label] => Teste
+                                                            [id] => 160
+                                                            [url] => /treinamento/treinamento/testclass/id/
+                                                            [liberado] => 
+                                                            [action] => testclass
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [5] => Array
+                                                        (
+                                                            [label] => Practical Training
+                                                            [id] => 528
+                                                            [url] => /treinamento/treinamento/practicaltraining/id/
+                                                            [liberado] => 
+                                                            [action] => practicaltraining
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [6] => Array
+                                                        (
+                                                            [label] => Attendence
+                                                            [id] => 529
+                                                            [url] => /treinamento/treinamento/attendence/id/
+                                                            [liberado] => 
+                                                            [action] => attendence
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [7] => Array
+                                                        (
+                                                            [label] => Evolução
+                                                            [id] => 489
+                                                            [url] => /treinamento/treinamento/evolucao/id/
+                                                            [liberado] => 
+                                                            [action] => evolucao
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [8] => Array
+                                                        (
+                                                            [label] => Finalização
+                                                            [id] => 161
+                                                            [url] => /treinamento/treinamento/finaliza/id/
+                                                            [liberado] => 
+                                                            [action] => finaliza
+                                                            [require] => id_class_evaluation
+                                                        )
+
+                                                )
+
+                                            [_action:protected] => 
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [action] => unidadescompentencia
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => treinamento
+                                                            [controller] => treinamento
+                                                            [action] => unidadescompentencia
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/default/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                        )
+
+                                    [1] => unidadescompentenciaAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42S22
+            [1] => 1054
+            [2] => Unknown column 'fk_id_course' in 'where clause'
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fk_id_course' in 'where clause' in /var/www/era/project/app/ilo/model/DAO.php on line <i>209</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>233792</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>237480</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0040</td><td bgcolor='#eeeeec' align='right'>564768</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0042</td><td bgcolor='#eeeeec' align='right'>586736</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0043</td><td bgcolor='#eeeeec' align='right'>589856</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0048</td><td bgcolor='#eeeeec' align='right'>655760</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0048</td><td bgcolor='#eeeeec' align='right'>656024</td><td bgcolor='#eeeeec'>Treinamento_Controller_Treinamento->unidadescompentenciaAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0056</td><td bgcolor='#eeeeec' align='right'>675208</td><td bgcolor='#eeeeec'>ILO_Model_DAO->fetchAll(  )</td><td title='/var/www/era/project/app/modules/treinamento/controller/Treinamento.php' bgcolor='#eeeeec'>../Treinamento.php<b>:</b>550</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0057</td><td bgcolor='#eeeeec' align='right'>676768</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>209</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 07/05/2015 09:40:21
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fk_id_course' in 'where clause'
+    [string:Exception:private] => 
+    [code:protected] => 42S22
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 209
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 209
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/treinamento/controller/Treinamento.php
+                    [line] => 550
+                    [function] => fetchAll
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => name_unit
+                                )
+
+                            [1] => Array
+                                (
+                                    [fk_id_course] => 
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [function] => unidadescompentenciaAction
+                    [class] => Treinamento_Controller_Treinamento
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Treinamento_Controller_Treinamento Object
+                                        (
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => turma
+                                                            [2] => endereco
+                                                            [3] => saveendereco
+                                                            [4] => savegeral
+                                                            [5] => saveturma
+                                                            [6] => saveteste
+                                                            [7] => saveparticipantes
+                                                            [8] => subdistritos
+                                                            [9] => sukus
+                                                            [10] => participantes
+                                                            [11] => unidadescompentencia
+                                                            [12] => listparticipantes
+                                                            [13] => removeparticipantes
+                                                            [14] => buscaparticipantes
+                                                            [15] => teste
+                                                            [16] => searchtest
+                                                            [17] => assessment
+                                                            [18] => saveassessment
+                                                            [19] => saveevolucao
+                                                            [20] => searchassessment
+                                                            [21] => finaliza
+                                                            [22] => evolucao
+                                                            [23] => savefinaliza
+                                                            [24] => testclass
+                                                            [25] => searchtestclass
+                                                            [26] => savetestclass
+                                                            [27] => practicaltraining
+                                                            [28] => searchpracticaltraining
+                                                            [29] => savepracticaltraining
+                                                            [30] => attendence
+                                                            [31] => searchattendence
+                                                            [32] => saveattendence
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                            [_abas:protected] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [label] => Informação Geral
+                                                            [id] => 51
+                                                            [url] => /treinamento/treinamento/cadastro/id/
+                                                            [liberado] => 1
+                                                            [action] => cadastro
+                                                            [selected] => 1
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [label] => Endereço
+                                                            [id] => 53
+                                                            [url] => /treinamento/treinamento/endereco/id/
+                                                            [liberado] => 
+                                                            [action] => endereco
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [label] => Curso da turma
+                                                            [id] => 158
+                                                            [url] => /treinamento/treinamento/turma/id/
+                                                            [liberado] => 
+                                                            [action] => turma
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [3] => Array
+                                                        (
+                                                            [label] => Lista de participante
+                                                            [id] => 159
+                                                            [url] => /treinamento/treinamento/participantes/id/
+                                                            [liberado] => 
+                                                            [action] => participantes
+                                                            [require] => fk_id_course
+                                                        )
+
+                                                    [4] => Array
+                                                        (
+                                                            [label] => Teste
+                                                            [id] => 160
+                                                            [url] => /treinamento/treinamento/testclass/id/
+                                                            [liberado] => 
+                                                            [action] => testclass
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [5] => Array
+                                                        (
+                                                            [label] => Practical Training
+                                                            [id] => 528
+                                                            [url] => /treinamento/treinamento/practicaltraining/id/
+                                                            [liberado] => 
+                                                            [action] => practicaltraining
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [6] => Array
+                                                        (
+                                                            [label] => Attendence
+                                                            [id] => 529
+                                                            [url] => /treinamento/treinamento/attendence/id/
+                                                            [liberado] => 
+                                                            [action] => attendence
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [7] => Array
+                                                        (
+                                                            [label] => Evolução
+                                                            [id] => 489
+                                                            [url] => /treinamento/treinamento/evolucao/id/
+                                                            [liberado] => 
+                                                            [action] => evolucao
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [8] => Array
+                                                        (
+                                                            [label] => Finalização
+                                                            [id] => 161
+                                                            [url] => /treinamento/treinamento/finaliza/id/
+                                                            [liberado] => 
+                                                            [action] => finaliza
+                                                            [require] => id_class_evaluation
+                                                        )
+
+                                                )
+
+                                            [_action:protected] => 
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [action] => unidadescompentencia
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => treinamento
+                                                            [controller] => treinamento
+                                                            [action] => unidadescompentencia
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/default/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                        )
+
+                                    [1] => unidadescompentenciaAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42S22
+            [1] => 1054
+            [2] => Unknown column 'fk_id_course' in 'where clause'
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fk_id_course' in 'where clause' in /var/www/era/project/app/ilo/model/DAO.php on line <i>209</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>230040</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>233728</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0039</td><td bgcolor='#eeeeec' align='right'>561016</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0042</td><td bgcolor='#eeeeec' align='right'>582984</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0043</td><td bgcolor='#eeeeec' align='right'>585928</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0048</td><td bgcolor='#eeeeec' align='right'>651832</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0048</td><td bgcolor='#eeeeec' align='right'>652096</td><td bgcolor='#eeeeec'>Treinamento_Controller_Treinamento->unidadescompentenciaAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0055</td><td bgcolor='#eeeeec' align='right'>671328</td><td bgcolor='#eeeeec'>ILO_Model_DAO->fetchAll(  )</td><td title='/var/www/era/project/app/modules/treinamento/controller/Treinamento.php' bgcolor='#eeeeec'>../Treinamento.php<b>:</b>550</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0055</td><td bgcolor='#eeeeec' align='right'>672680</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>209</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 07/05/2015 09:50:51
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fk_id_course' in 'where clause'
+    [string:Exception:private] => 
+    [code:protected] => 42S22
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 209
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 209
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [:w_fk_id_course] => 1
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/treinamento/controller/Treinamento.php
+                    [line] => 550
+                    [function] => fetchAll
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => name_unit
+                                )
+
+                            [1] => Array
+                                (
+                                    [fk_id_course] => 1
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [function] => unidadescompentenciaAction
+                    [class] => Treinamento_Controller_Treinamento
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Treinamento_Controller_Treinamento Object
+                                        (
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => turma
+                                                            [2] => endereco
+                                                            [3] => saveendereco
+                                                            [4] => savegeral
+                                                            [5] => saveturma
+                                                            [6] => saveteste
+                                                            [7] => saveparticipantes
+                                                            [8] => subdistritos
+                                                            [9] => sukus
+                                                            [10] => participantes
+                                                            [11] => unidadescompentencia
+                                                            [12] => listparticipantes
+                                                            [13] => removeparticipantes
+                                                            [14] => buscaparticipantes
+                                                            [15] => teste
+                                                            [16] => searchtest
+                                                            [17] => assessment
+                                                            [18] => saveassessment
+                                                            [19] => saveevolucao
+                                                            [20] => searchassessment
+                                                            [21] => finaliza
+                                                            [22] => evolucao
+                                                            [23] => savefinaliza
+                                                            [24] => testclass
+                                                            [25] => searchtestclass
+                                                            [26] => savetestclass
+                                                            [27] => practicaltraining
+                                                            [28] => searchpracticaltraining
+                                                            [29] => savepracticaltraining
+                                                            [30] => attendence
+                                                            [31] => searchattendence
+                                                            [32] => saveattendence
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                            [_abas:protected] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [label] => Informação Geral
+                                                            [id] => 51
+                                                            [url] => /treinamento/treinamento/cadastro/id/
+                                                            [liberado] => 1
+                                                            [action] => cadastro
+                                                            [selected] => 1
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [label] => Endereço
+                                                            [id] => 53
+                                                            [url] => /treinamento/treinamento/endereco/id/
+                                                            [liberado] => 
+                                                            [action] => endereco
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [label] => Curso da turma
+                                                            [id] => 158
+                                                            [url] => /treinamento/treinamento/turma/id/
+                                                            [liberado] => 
+                                                            [action] => turma
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [3] => Array
+                                                        (
+                                                            [label] => Lista de participante
+                                                            [id] => 159
+                                                            [url] => /treinamento/treinamento/participantes/id/
+                                                            [liberado] => 
+                                                            [action] => participantes
+                                                            [require] => fk_id_course
+                                                        )
+
+                                                    [4] => Array
+                                                        (
+                                                            [label] => Teste
+                                                            [id] => 160
+                                                            [url] => /treinamento/treinamento/testclass/id/
+                                                            [liberado] => 
+                                                            [action] => testclass
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [5] => Array
+                                                        (
+                                                            [label] => Practical Training
+                                                            [id] => 528
+                                                            [url] => /treinamento/treinamento/practicaltraining/id/
+                                                            [liberado] => 
+                                                            [action] => practicaltraining
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [6] => Array
+                                                        (
+                                                            [label] => Attendence
+                                                            [id] => 529
+                                                            [url] => /treinamento/treinamento/attendence/id/
+                                                            [liberado] => 
+                                                            [action] => attendence
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [7] => Array
+                                                        (
+                                                            [label] => Evolução
+                                                            [id] => 489
+                                                            [url] => /treinamento/treinamento/evolucao/id/
+                                                            [liberado] => 
+                                                            [action] => evolucao
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [8] => Array
+                                                        (
+                                                            [label] => Finalização
+                                                            [id] => 161
+                                                            [url] => /treinamento/treinamento/finaliza/id/
+                                                            [liberado] => 
+                                                            [action] => finaliza
+                                                            [require] => id_class_evaluation
+                                                        )
+
+                                                )
+
+                                            [_action:protected] => 
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [action] => unidadescompentencia
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => treinamento
+                                                            [controller] => treinamento
+                                                            [action] => unidadescompentencia
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/default/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                        )
+
+                                    [1] => unidadescompentenciaAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42S22
+            [1] => 1054
+            [2] => Unknown column 'fk_id_course' in 'where clause'
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fk_id_course' in 'where clause' in /var/www/era/project/app/ilo/model/DAO.php on line <i>209</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>233792</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>237480</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0040</td><td bgcolor='#eeeeec' align='right'>564768</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0042</td><td bgcolor='#eeeeec' align='right'>586736</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0043</td><td bgcolor='#eeeeec' align='right'>589856</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0048</td><td bgcolor='#eeeeec' align='right'>655760</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0048</td><td bgcolor='#eeeeec' align='right'>656024</td><td bgcolor='#eeeeec'>Treinamento_Controller_Treinamento->unidadescompentenciaAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0056</td><td bgcolor='#eeeeec' align='right'>675208</td><td bgcolor='#eeeeec'>ILO_Model_DAO->fetchAll(  )</td><td title='/var/www/era/project/app/modules/treinamento/controller/Treinamento.php' bgcolor='#eeeeec'>../Treinamento.php<b>:</b>550</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0057</td><td bgcolor='#eeeeec' align='right'>676768</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>209</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 07/05/2015 09:51:17
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fk_id_course' in 'where clause'
+    [string:Exception:private] => 
+    [code:protected] => 42S22
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 209
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 209
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [:w_fk_id_course] => 1
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/treinamento/controller/Treinamento.php
+                    [line] => 550
+                    [function] => fetchAll
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => name_unit
+                                )
+
+                            [1] => Array
+                                (
+                                    [fk_id_course] => 1
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [function] => unidadescompentenciaAction
+                    [class] => Treinamento_Controller_Treinamento
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Treinamento_Controller_Treinamento Object
+                                        (
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => turma
+                                                            [2] => endereco
+                                                            [3] => saveendereco
+                                                            [4] => savegeral
+                                                            [5] => saveturma
+                                                            [6] => saveteste
+                                                            [7] => saveparticipantes
+                                                            [8] => subdistritos
+                                                            [9] => sukus
+                                                            [10] => participantes
+                                                            [11] => unidadescompentencia
+                                                            [12] => listparticipantes
+                                                            [13] => removeparticipantes
+                                                            [14] => buscaparticipantes
+                                                            [15] => teste
+                                                            [16] => searchtest
+                                                            [17] => assessment
+                                                            [18] => saveassessment
+                                                            [19] => saveevolucao
+                                                            [20] => searchassessment
+                                                            [21] => finaliza
+                                                            [22] => evolucao
+                                                            [23] => savefinaliza
+                                                            [24] => testclass
+                                                            [25] => searchtestclass
+                                                            [26] => savetestclass
+                                                            [27] => practicaltraining
+                                                            [28] => searchpracticaltraining
+                                                            [29] => savepracticaltraining
+                                                            [30] => attendence
+                                                            [31] => searchattendence
+                                                            [32] => saveattendence
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                            [_abas:protected] => Array
+                                                (
+                                                    [0] => Array
+                                                        (
+                                                            [label] => Informação Geral
+                                                            [id] => 51
+                                                            [url] => /treinamento/treinamento/cadastro/id/
+                                                            [liberado] => 1
+                                                            [action] => cadastro
+                                                            [selected] => 1
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [1] => Array
+                                                        (
+                                                            [label] => Endereço
+                                                            [id] => 53
+                                                            [url] => /treinamento/treinamento/endereco/id/
+                                                            [liberado] => 
+                                                            [action] => endereco
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [2] => Array
+                                                        (
+                                                            [label] => Curso da turma
+                                                            [id] => 158
+                                                            [url] => /treinamento/treinamento/turma/id/
+                                                            [liberado] => 
+                                                            [action] => turma
+                                                            [require] => id_student_class
+                                                        )
+
+                                                    [3] => Array
+                                                        (
+                                                            [label] => Lista de participante
+                                                            [id] => 159
+                                                            [url] => /treinamento/treinamento/participantes/id/
+                                                            [liberado] => 
+                                                            [action] => participantes
+                                                            [require] => fk_id_course
+                                                        )
+
+                                                    [4] => Array
+                                                        (
+                                                            [label] => Teste
+                                                            [id] => 160
+                                                            [url] => /treinamento/treinamento/testclass/id/
+                                                            [liberado] => 
+                                                            [action] => testclass
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [5] => Array
+                                                        (
+                                                            [label] => Practical Training
+                                                            [id] => 528
+                                                            [url] => /treinamento/treinamento/practicaltraining/id/
+                                                            [liberado] => 
+                                                            [action] => practicaltraining
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [6] => Array
+                                                        (
+                                                            [label] => Attendence
+                                                            [id] => 529
+                                                            [url] => /treinamento/treinamento/attendence/id/
+                                                            [liberado] => 
+                                                            [action] => attendence
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [7] => Array
+                                                        (
+                                                            [label] => Evolução
+                                                            [id] => 489
+                                                            [url] => /treinamento/treinamento/evolucao/id/
+                                                            [liberado] => 
+                                                            [action] => evolucao
+                                                            [require] => fk_id_client
+                                                        )
+
+                                                    [8] => Array
+                                                        (
+                                                            [label] => Finalização
+                                                            [id] => 161
+                                                            [url] => /treinamento/treinamento/finaliza/id/
+                                                            [liberado] => 
+                                                            [action] => finaliza
+                                                            [require] => id_class_evaluation
+                                                        )
+
+                                                )
+
+                                            [_action:protected] => 
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => Array
+                                                        (
+                                                            [action] => unidadescompentencia
+                                                        )
+
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => treinamento
+                                                            [controller] => treinamento
+                                                            [action] => unidadescompentencia
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/default/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                        )
+
+                                    [1] => unidadescompentenciaAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42S22
+            [1] => 1054
+            [2] => Unknown column 'fk_id_course' in 'where clause'
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'fk_id_course' in 'where clause' in /var/www/era/project/app/ilo/model/DAO.php on line <i>209</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>233792</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>237480</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0026</td><td bgcolor='#eeeeec' align='right'>564768</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0027</td><td bgcolor='#eeeeec' align='right'>586736</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0028</td><td bgcolor='#eeeeec' align='right'>589856</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0031</td><td bgcolor='#eeeeec' align='right'>655760</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0031</td><td bgcolor='#eeeeec' align='right'>656024</td><td bgcolor='#eeeeec'>Treinamento_Controller_Treinamento->unidadescompentenciaAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0036</td><td bgcolor='#eeeeec' align='right'>675208</td><td bgcolor='#eeeeec'>ILO_Model_DAO->fetchAll(  )</td><td title='/var/www/era/project/app/modules/treinamento/controller/Treinamento.php' bgcolor='#eeeeec'>../Treinamento.php<b>:</b>550</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0037</td><td bgcolor='#eeeeec' align='right'>676768</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>209</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 07/05/2015 12:53:11
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'acronym' in 'where clause'
+    [string:Exception:private] => 
+    [code:protected] => 42S22
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 209
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 209
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [:w_acronym] => UVA
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/UnitCompetency.php
+                    [line] => 15
+                    [function] => fetchAll
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                            [1] => Array
+                                (
+                                    [acronym] => UVA
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/treinamento/controller/Competencia.php
+                    [line] => 46
+                    [function] => save
+                    [class] => Model_BO_UnitCompetency
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [function] => saveAction
+                    [class] => Treinamento_Controller_Competencia
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Treinamento_Controller_Competencia Object
+                                        (
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => 
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => treinamento
+                                                            [controller] => competencia
+                                                            [action] => save
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/default/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => saveAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42S22
+            [1] => 1054
+            [2] => Unknown column 'acronym' in 'where clause'
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'acronym' in 'where clause' in /var/www/era/project/app/ilo/model/DAO.php on line <i>209</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>234736</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>238424</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0027</td><td bgcolor='#eeeeec' align='right'>579776</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0029</td><td bgcolor='#eeeeec' align='right'>601728</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0029</td><td bgcolor='#eeeeec' align='right'>605056</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0032</td><td bgcolor='#eeeeec' align='right'>644672</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0032</td><td bgcolor='#eeeeec' align='right'>644936</td><td bgcolor='#eeeeec'>Treinamento_Controller_Competencia->saveAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0036</td><td bgcolor='#eeeeec' align='right'>659936</td><td bgcolor='#eeeeec'>Model_BO_UnitCompetency->save(  )</td><td title='/var/www/era/project/app/modules/treinamento/controller/Competencia.php' bgcolor='#eeeeec'>../Competencia.php<b>:</b>46</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0042</td><td bgcolor='#eeeeec' align='right'>688080</td><td bgcolor='#eeeeec'>ILO_Model_DAO->fetchAll(  )</td><td title='/var/www/era/project/app/modules/model/bo/UnitCompetency.php' bgcolor='#eeeeec'>../UnitCompetency.php<b>:</b>15</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0043</td><td bgcolor='#eeeeec' align='right'>689568</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>209</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Data: 07/05/2015 12:53:34
+Conteudo: PDOException Object
+(
+    [message:protected] => SQLSTATE[42S22]: Column not found: 1054 Unknown column 'acronym' in 'where clause'
+    [string:Exception:private] => 
+    [code:protected] => 42S22
+    [file:protected] => /var/www/era/project/app/ilo/model/DAO.php
+    [line:protected] => 209
+    [trace:Exception:private] => Array
+        (
+            [0] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/model/DAO.php
+                    [line] => 209
+                    [function] => execute
+                    [class] => PDOStatement
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [:w_acronym] => UVA
+                                )
+
+                        )
+
+                )
+
+            [1] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/model/bo/UnitCompetency.php
+                    [line] => 15
+                    [function] => fetchAll
+                    [class] => ILO_Model_DAO
+                    [type] => ->
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                )
+
+                            [1] => Array
+                                (
+                                    [acronym] => UVA
+                                )
+
+                        )
+
+                )
+
+            [2] => Array
+                (
+                    [file] => /var/www/era/project/app/modules/treinamento/controller/Competencia.php
+                    [line] => 46
+                    [function] => save
+                    [class] => Model_BO_UnitCompetency
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [3] => Array
+                (
+                    [function] => saveAction
+                    [class] => Treinamento_Controller_Competencia
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [4] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 407
+                    [function] => call_user_func_array
+                    [args] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [0] => Treinamento_Controller_Competencia Object
+                                        (
+                                            [view:protected] => ILO_View_Render Object
+                                                (
+                                                    [_vars:protected] => 
+                                                    [_viewPath:protected] => 
+                                                    [_rota:protected] => Array
+                                                        (
+                                                            [modulo] => treinamento
+                                                            [controller] => competencia
+                                                            [action] => save
+                                                        )
+
+                                                    [_renderLayout:protected] => 1
+                                                    [_layoutFile:protected] => /var/www/era/project/app/modules/default/layout/main.php
+                                                    [_helper:protected] => ILO_Helper_Proxy Object
+                                                        (
+                                                        )
+
+                                                    [_layoutPath:protected] => /var/www/era/project/app/modules/
+                                                )
+
+                                            [_renderView:protected] => 1
+                                            [_helper:protected] => ILO_Helper_Proxy Object
+                                                (
+                                                )
+
+                                            [_accessMapping:protected] => Array
+                                                (
+                                                    [salvar] => Array
+                                                        (
+                                                            [0] => cadastro
+                                                            [1] => save
+                                                            [2] => editar
+                                                        )
+
+                                                    [consultar] => Array
+                                                        (
+                                                            [0] => index
+                                                        )
+
+                                                )
+
+                                        )
+
+                                    [1] => saveAction
+                                )
+
+                            [1] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [5] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/router/Dispatcher.php
+                    [line] => 341
+                    [function] => dispatch
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [6] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 37
+                    [function] => run
+                    [class] => ILO_Router_Dispatcher
+                    [type] => ->
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [7] => Array
+                (
+                    [file] => /var/www/era/project/app/ilo/Bootstrap.php
+                    [line] => 10
+                    [function] => initRoute
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+            [8] => Array
+                (
+                    [file] => /var/www/era/project/index.php
+                    [line] => 12
+                    [function] => start
+                    [class] => ILO_Bootstrap
+                    [type] => ::
+                    [args] => Array
+                        (
+                        )
+
+                )
+
+        )
+
+    [previous:Exception:private] => 
+    [errorInfo] => Array
+        (
+            [0] => 42S22
+            [1] => 1054
+            [2] => Unknown column 'acronym' in 'where clause'
+        )
+
+    [xdebug_message] => <tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'acronym' in 'where clause' in /var/www/era/project/app/ilo/model/DAO.php on line <i>209</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0000</td><td bgcolor='#eeeeec' align='right'>234736</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0002</td><td bgcolor='#eeeeec' align='right'>238424</td><td bgcolor='#eeeeec'>ILO_Bootstrap::start(  )</td><td title='/var/www/era/project/index.php' bgcolor='#eeeeec'>../index.php<b>:</b>12</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0041</td><td bgcolor='#eeeeec' align='right'>579776</td><td bgcolor='#eeeeec'>ILO_Bootstrap::initRoute(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>4</td><td bgcolor='#eeeeec' align='center'>0.0043</td><td bgcolor='#eeeeec' align='right'>601728</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->run(  )</td><td title='/var/www/era/project/app/ilo/Bootstrap.php' bgcolor='#eeeeec'>../Bootstrap.php<b>:</b>37</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>5</td><td bgcolor='#eeeeec' align='center'>0.0044</td><td bgcolor='#eeeeec' align='right'>605056</td><td bgcolor='#eeeeec'>ILO_Router_Dispatcher->dispatch(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>341</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>6</td><td bgcolor='#eeeeec' align='center'>0.0049</td><td bgcolor='#eeeeec' align='right'>644672</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.call-user-func-array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}' target='_new'>call_user_func_array:{/var/www/era/project/app/ilo/router/Dispatcher.php:407}</a>
+(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>7</td><td bgcolor='#eeeeec' align='center'>0.0049</td><td bgcolor='#eeeeec' align='right'>644936</td><td bgcolor='#eeeeec'>Treinamento_Controller_Competencia->saveAction(  )</td><td title='/var/www/era/project/app/ilo/router/Dispatcher.php' bgcolor='#eeeeec'>../Dispatcher.php<b>:</b>407</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>8</td><td bgcolor='#eeeeec' align='center'>0.0054</td><td bgcolor='#eeeeec' align='right'>660000</td><td bgcolor='#eeeeec'>Model_BO_UnitCompetency->save(  )</td><td title='/var/www/era/project/app/modules/treinamento/controller/Competencia.php' bgcolor='#eeeeec'>../Competencia.php<b>:</b>46</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>9</td><td bgcolor='#eeeeec' align='center'>0.0062</td><td bgcolor='#eeeeec' align='right'>688144</td><td bgcolor='#eeeeec'>ILO_Model_DAO->fetchAll(  )</td><td title='/var/www/era/project/app/modules/model/bo/UnitCompetency.php' bgcolor='#eeeeec'>../UnitCompetency.php<b>:</b>15</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>10</td><td bgcolor='#eeeeec' align='center'>0.0062</td><td bgcolor='#eeeeec' align='right'>689632</td><td bgcolor='#eeeeec'><a href='http://www.php.net/PDOStatement.execute' target='_new'>execute</a>
+(  )</td><td title='/var/www/era/project/app/ilo/model/DAO.php' bgcolor='#eeeeec'>../DAO.php<b>:</b>209</td></tr>
+
+)
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+

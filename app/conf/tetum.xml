@@ -1,0 +1,3568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language>
+    <termo>
+	<id>1</id>
+	<traducao>Usuariu</traducao>
+	<original>Usuário</original>
+    </termo>
+    <termo>
+	<id>2</id>
+	<traducao>Modulu</traducao>
+	<original>Módulo</original>
+    </termo>
+    <termo>
+	<id>3</id>
+	<traducao>Formulariu</traducao>
+	<original>Fomulário</original>
+    </termo>
+    <termo>
+	<id>4</id>
+	<traducao>Bem-vindu</traducao>
+	<original>Bem-vindo</original>
+    </termo>
+    <termo>
+	<id>5</id>
+	<traducao>Hau nia dadus</traducao>
+	<original>Meus dados</original>
+    </termo>
+    <termo>
+	<id>6</id>
+	<traducao>Data/ora</traducao>
+	<original>Data/hora</original>
+    </termo>
+    <termo>
+	<id>7</id>
+	<traducao>Area trabalhu</traducao>
+	<original>Área de trabalho</original>
+    </termo>
+    <termo>
+	<id>8</id>
+	<traducao>Sai</traducao>
+	<original>Sair</original>
+    </termo>
+    <termo>
+	<id>9</id>
+	<traducao>Lista dadus</traducao>
+	<original>Listar dados</original>
+    </termo>
+    <termo>
+	<id>10</id>
+	<traducao>Naram</traducao>
+	<original>Nome</original>
+    </termo>
+    <termo>
+	<id>11</id>
+	<traducao>Hakerek Naran</traducao>
+	<original>Preencha o nome</original>
+    </termo>
+    <termo>
+	<id>12</id>
+	<traducao>Naran Modulu</traducao>
+	<original>Nome do módulo</original>
+    </termo>
+    <termo>
+	<id>13</id>
+	<traducao>Descrisaun</traducao>
+	<original>Descrição</original>
+    </termo>
+    <termo>
+	<id>14</id>
+	<traducao>Descrisaun konaba modulu</traducao>
+	<original>Descrição do módulo</original>
+    </termo>
+    <termo>
+	<id>15</id>
+	<traducao>Halot</traducao>
+	<original>Salvar</original>
+    </termo>
+    <termo>
+	<id>16</id>
+	<traducao>Hamos</traducao>
+	<original>Limpar</original>
+    </termo>
+    <termo>
+	<id>17</id>
+	<traducao>Foun</traducao>
+	<original>Novo</original>
+    </termo>
+    <termo>
+	<id>18</id>
+	<traducao>Troka</traducao>
+	<original>Editar</original>
+    </termo>
+    <termo>
+	<id>19</id>
+	<traducao>Total</traducao>
+	<original>Total</original>
+    </termo>
+    <termo>
+	<id>20</id>
+	<traducao>Hili ida ba troca</traducao>
+	<original>Selecione o item para edição</original>
+    </termo>
+    <termo>
+	<id>21</id>
+	<traducao>Tama</traducao>
+	<original>Login</original>
+    </termo>
+    <termo>
+	<id>22</id>
+	<traducao>Status</traducao>
+	<original>Status</original>
+    </termo>
+    <termo>
+	<id>23</id>
+	<traducao>Password la diak</traducao>
+	<original>Senhas não conferem</original>
+    </termo>
+    <termo>
+	<id>24</id>
+	<traducao>Login iha tiha ona</traducao>
+	<original>Login já cadastrado</original>
+    </termo>
+    <termo>
+	<id>25</id>
+	<traducao>Erro ba halo operasaun</traducao>
+	<original>Erro ao efetuar operação</original>
+    </termo>
+    <termo>
+	<id>26</id>
+	<traducao>Naran Formulariu</traducao>
+	<original>Nome do Formulário</original>
+    </termo>
+    <termo>
+	<id>27</id>
+	<traducao>fatin</traducao>
+	<original>Caminho</original>
+    </termo>
+    <termo>
+	<id>28</id>
+	<traducao>Hili modulu</traducao>
+	<original>Selecione o módulo</original>
+    </termo>
+    <termo>
+	<id>29</id>
+	<traducao>Preense caminho</traducao>
+	<original>Preencha o caminho</original>
+    </termo>
+    <termo>
+	<id>30</id>
+	<traducao>Permisaun</traducao>
+	<original>Permissão</original>
+    </termo>
+    <termo>
+	<id>31</id>
+	<traducao>Naran usuariu</traducao>
+	<original>Nome do usuário</original>
+    </termo>
+    <termo>
+	<id>32</id>
+	<traducao>Login usuariu</traducao>
+	<original>Login do usuário</original>
+    </termo>
+    <termo>
+	<id>33</id>
+	<traducao>Tenki Preense login usuariu</traducao>
+	<original>Preencha o login do usuário</original>
+    </termo>
+    <termo>
+	<id>34</id>
+	<traducao>Password</traducao>
+	<original>Senha</original>
+    </termo>
+    <termo>
+	<id>35</id>
+	<traducao>Asesu Restritu</traducao>
+	<original>Acesso Restrito</original>
+    </termo>
+    <termo>
+	<id>36</id>
+	<traducao>Tama</traducao>
+	<original>Entrar</original>
+    </termo>
+    <termo>
+	<id>37</id>
+	<traducao>Kontraktu</traducao>
+	<original>Contrato</original>
+    </termo>
+    <termo>
+	<id>38</id>
+	<traducao>Kodigu Kontraktu</traducao>
+	<original>Project Cod</original>
+    </termo>
+    <termo>
+	<id>39</id>
+	<traducao>Numeru Projektu</traducao>
+	<original>Número do projeto</original>
+    </termo>
+    <termo>
+	<id>40</id>
+	<traducao>Painel</traducao>
+	<original>Painel</original>
+    </termo>
+    <termo>
+	<id>41</id>
+	<traducao>Administrativu</traducao>
+	<original>Administrativo</original>
+    </termo>
+    <termo>
+	<id>42</id>
+	<traducao>Tenki Preense password</traducao>
+	<original>Preencha a senha</original>
+    </termo>
+    <termo>
+	<id>43</id>
+	<traducao>Passwork usuariu</traducao>
+	<original>Senha do usuário</original>
+    </termo>
+    <termo>
+	<id>44</id>
+	<traducao>Confirma Password</traducao>
+	<original>Confirma Senha</original>
+    </termo>
+    <termo>
+	<id>45</id>
+	<traducao>Hili status</traducao>
+	<original>Selecione o status</original>
+    </termo>
+    <termo>
+	<id>46</id>
+	<traducao>Operasaun Diak</traducao>
+	<original>Operação realizada com sucesso</original>
+    </termo>
+    <termo>
+	<id>47</id>
+	<traducao>Benefisiariu</traducao>
+	<original>Beneficiário</original>
+    </termo>
+    <termo>
+	<id>48</id>
+	<traducao>Kontraktu</traducao>
+	<original>Contrato</original>
+    </termo>
+    <termo>
+	<id>49</id>
+	<traducao>Naran Kontraktor</traducao>
+	<original>Nome do Contratado</original>
+    </termo>
+    <termo>
+	<id>50</id>
+	<traducao>ILO Kontraktu</traducao>
+	<original>ILO Contract</original>
+    </termo>
+    <termo>
+	<id>51</id>
+	<traducao>Informasaun Geral</traducao>
+	<original>Informação Geral</original>
+    </termo>
+    <termo>
+	<id>52</id>
+	<traducao>Edukasaum</traducao>
+	<original>Educação</original>
+    </termo>
+    <termo>
+	<id>53</id>
+	<traducao>Hela Fatim</traducao>
+	<original>Endereço</original>
+    </termo>
+    <termo>
+	<id>54</id>
+	<traducao>Pagamentu</traducao>
+	<original>Pagamento</original>
+    </termo>
+    <termo>
+	<id>55</id>
+	<traducao>Numeru benefisiariu</traducao>
+	<original>Número beneficiário</original>
+    </termo>
+    <termo>
+	<id>56</id>
+	<traducao>Naram Primeiru</traducao>
+	<original>Primeiro nome</original>
+    </termo>
+    <termo>
+	<id>57</id>
+	<traducao>Naram Apelidu</traducao>
+	<original>Sobrenome</original>
+    </termo>
+    <termo>
+	<id>58</id>
+	<traducao>Naran primeiru ba benefisiariu</traducao>
+	<original>Primeiro nome do beneficiário</original>
+    </termo>
+    <termo>
+	<id>59</id>
+	<traducao>Naran Apelidu benefisiariu</traducao>
+	<original>Sobrenome do beneficiário</original>
+    </termo>
+    <termo>
+	<id>60</id>
+	<traducao>Tenki preense Naran Apelidu</traducao>
+	<original>Preencha o sobrenome</original>
+    </termo>
+    <termo>
+	<id>61</id>
+	<traducao>Data Moris</traducao>
+	<original>Data de nascimento</original>
+    </termo>
+    <termo>
+	<id>62</id>
+	<traducao>Preense data moris</traducao>
+	<original>Preencha a data de nascimento</original>
+    </termo>
+    <termo>
+	<id>63</id>
+	<traducao>Fatin Moris</traducao>
+	<original>Local de nascimento</original>
+    </termo>
+    <termo>
+	<id>64</id>
+	<traducao>Preense fatin moris</traducao>
+	<original>Preencha o local de nascimento</original>
+    </termo>
+    <termo>
+	<id>65</id>
+	<traducao>Tinan</traducao>
+	<original>Idade</original>
+    </termo>
+    <termo>
+	<id>66</id>
+	<traducao>Tinan Benefisiariu</traducao>
+	<original>Idade do beneficiário</original>
+    </termo>
+    <termo>
+	<id>67</id>
+	<traducao>Dokumentus</traducao>
+	<original>Documentos</original>
+    </termo>
+    <termo>
+	<id>68</id>
+	<traducao>Tenki Preense documentu</traducao>
+	<original>Preencha o documento</original>
+    </termo>
+    <termo>
+	<id>69</id>
+	<traducao>Sexu</traducao>
+	<original>Sexo</original>
+    </termo>
+    <termo>
+	<id>70</id>
+	<traducao>Hili sexu</traducao>
+	<original>Selecione o sexo</original>
+    </termo>
+    <termo>
+	<id>71</id>
+	<traducao>Estadu Sivil</traducao>
+	<original>Estado civil</original>
+    </termo>
+    <termo>
+	<id>72</id>
+	<traducao>Profisaun</traducao>
+	<original>Profissão</original>
+    </termo>
+    <termo>
+	<id>73</id>
+	<traducao>Hili profisaun</traducao>
+	<original>Selecione a profissão</original>
+    </termo>
+    <termo>
+	<id>74</id>
+	<traducao>Sektor</traducao>
+	<original>Setor</original>
+    </termo>
+    <termo>
+	<id>75</id>
+	<traducao>Naran Supervisor</traducao>
+	<original>Supervisor de campo</original>
+    </termo>
+    <termo>
+	<id>76</id>
+	<traducao>Data Rejistu</traducao>
+	<original>Data de registro</original>
+    </termo>
+    <termo>
+	<id>77</id>
+	<traducao>Tenki preense data registro</traducao>
+	<original>Preencha a data de registro</original>
+    </termo>
+    <termo>
+	<id>78</id>
+	<traducao>Data moris la diak</traducao>
+	<original>Data de nascimento inválida</original>
+    </termo>
+    <termo>
+	<id>79</id>
+	<traducao>Data registru la diak</traducao>
+	<original>Data de registro inválida</original>
+    </termo>
+    <termo>
+	<id>80</id>
+	<traducao>Nivel Edukasaun Formal</traducao>
+	<original>Nível de educação</original>
+    </termo>
+    <termo>
+	<id>81</id>
+	<traducao>Hili nivel edukasaun</traducao>
+	<original>Selecione o nível de educação</original>
+    </termo>
+    <termo>
+	<id>82</id>
+	<traducao>Iha Formasaun Prof</traducao>
+	<original>Formação profissional</original>
+    </termo>
+    <termo>
+	<id>83</id>
+	<traducao>Mane</traducao>
+	<original>Masculino</original>
+    </termo>
+    <termo>
+	<id>84</id>
+	<traducao>Feto</traducao>
+	<original>Feminino</original>
+    </termo>
+    <termo>
+	<id>85</id>
+	<traducao>Hili</traducao>
+	<original>Selecione</original>
+    </termo>
+    <termo>
+	<id>86</id>
+	<traducao>Sim</traducao>
+	<original>Sim</original>
+    </termo>
+    <termo>
+	<id>87</id>
+	<traducao>Lai</traducao>
+	<original>Não</original>
+    </termo>
+    <termo>
+	<id>88</id>
+	<traducao>Ativu</traducao>
+	<original>Ativo</original>
+    </termo>
+    <termo>
+	<id>89</id>
+	<traducao>Laos Ativu</traducao>
+	<original>Inativo</original>
+    </termo>
+    <termo>
+	<id>90</id>
+	<traducao>Formasaum</traducao>
+	<original>Formação</original>
+    </termo>
+    <termo>
+	<id>91</id>
+	<traducao>Aumenta Formasaun</traducao>
+	<original>Adicionar</original>
+    </termo>
+    <termo>
+	<id>92</id>
+	<traducao>Tinam Remata</traducao>
+	<original>Ano de finalização</original>
+    </termo>
+    <termo>
+	<id>93</id>
+	<traducao>Hakarak sai item</traducao>
+	<original>Deseja remover este item</original>
+    </termo>
+    <termo>
+	<id>94</id>
+	<traducao>Nasaun</traducao>
+	<original>País</original>
+    </termo>
+    <termo>
+	<id>95</id>
+	<traducao>Hili Nasaun</traducao>
+	<original>Selecione o país</original>
+    </termo>
+    <termo>
+	<id>96</id>
+	<traducao>Distritu</traducao>
+	<original>Distrito</original>
+    </termo>
+    <termo>
+	<id>97</id>
+	<traducao>Hili distritu</traducao>
+	<original>Selecione o distrito</original>
+    </termo>
+    <termo>
+	<id>98</id>
+	<traducao>Sub-Distritu</traducao>
+	<original>Sub-distrito</original>
+    </termo>
+    <termo>
+	<id>99</id>
+	<traducao>Hili sub-distritu</traducao>
+	<original>Selecione o sub-distrito</original>
+    </termo>
+    <termo>
+	<id>100</id>
+	<traducao>Suku</traducao>
+	<original>Bairro</original>
+    </termo>
+    <termo>
+	<id>101</id>
+	<traducao>Hili sub-distritu</traducao>
+	<original>Selecione o sub-distrito</original>
+    </termo>
+    <termo>
+	<id>102</id>
+	<traducao>Aldeia</traducao>
+	<original>Aldeia</original>
+    </termo>
+    <termo>
+	<id>103</id>
+	<traducao>Dalan</traducao>
+	<original>Rua</original>
+    </termo>
+    <termo>
+	<id>104</id>
+	<traducao>Numeru</traducao>
+	<original>Número</original>
+    </termo>
+    <termo>
+	<id>105</id>
+	<traducao>Deskrisaum</traducao>
+	<original>Descrição</original>
+    </termo>
+    <termo>
+	<id>106</id>
+	<traducao>Loron Total</traducao>
+	<original>Total de dias</original>
+    </termo>
+    <termo>
+	<id>107</id>
+	<traducao>Pagamentu iha ona ba benefisiariu ne'e</traducao>
+	<original>Pagamento já cadastrado para beneficiário</original>
+    </termo>
+    <termo>
+	<id>108</id>
+	<traducao>Planeamentu</traducao>
+	<original>Planejamento</original>
+    </termo>
+    <termo>
+	<id>109</id>
+	<traducao>Ezekusaun</traducao>
+	<original>Execução</original>
+    </termo>
+    <termo>
+	<id>110</id>
+	<traducao>Auditoria</traducao>
+	<original>Auditoria</original>
+    </termo>
+    <termo>
+	<id>111</id>
+	<traducao>Operasaun</traducao>
+	<original>Operação</original>
+    </termo>
+    <termo>
+	<id>112</id>
+	<traducao>Atividade</traducao>
+	<original>Atividade</original>
+    </termo>
+    <termo>
+	<id>113</id>
+	<traducao>Dalan Naran</traducao>
+	<original>Dalan Naran</original>
+    </termo>
+    <termo>
+	<id>114</id>
+	<traducao>Tenki preense Dalan Naran</traducao>
+	<original>Preencha o Dalan Naran</original>
+    </termo>
+    <termo>
+	<id>115</id>
+	<traducao>Dalan length</traducao>
+	<original>Dalan length</original>
+    </termo>
+    <termo>
+	<id>116</id>
+	<traducao>Tenki preense Dalan length</traducao>
+	<original>Preencha o Dalan length</original>
+    </termo>
+    <termo>
+	<id>117</id>
+	<traducao>Dalan Seksaun</traducao>
+	<original>Dalan Seksaun</original>
+    </termo>
+    <termo>
+	<id>118</id>
+	<traducao>Tenki preense Dalan Seksaun</traducao>
+	<original>Preencha o Dalan Seksaun</original>
+    </termo>
+    <termo>
+	<id>119</id>
+	<traducao>Seksaun length</traducao>
+	<original>Seksaun length</original>
+    </termo>
+    <termo>
+	<id>120</id>
+	<traducao>Tenki preense Seksaun length</traducao>
+	<original>Preencha o Seksaun length</original>
+    </termo>
+    <termo>
+	<id>121</id>
+	<traducao>Fatin Sub-distritu</traducao>
+	<original>Fatin Subdistritu</original>
+    </termo>
+    <termo>
+	<id>122</id>
+	<traducao>Hili Fatin Sub-distritu</traducao>
+	<original>Escolha o Fatin Subdistritu</original>
+    </termo>
+    <termo>
+	<id>123</id>
+	<traducao>Fatin Suku</traducao>
+	<original>Fatin Suku</original>
+    </termo>
+    <termo>
+	<id>124</id>
+	<traducao>Hili Fatin Suku</traducao>
+	<original>Escolha o Fatin Suku</original>
+    </termo>
+    <termo>
+	<id>125</id>
+	<traducao>Aumenta Informasaun</traducao>
+	<original>Aumenta Informasaun</original>
+    </termo>
+    <termo>
+	<id>126</id>
+	<traducao>Data Hari</traducao>
+	<original>Data Hari</original>
+    </termo>
+    <termo>
+	<id>127</id>
+	<traducao>Tenki preense Data Hari</traducao>
+	<original>Preencha Data Hari</original>
+    </termo>
+    <termo>
+	<id>128</id>
+	<traducao>Data Remata</traducao>
+	<original>Data Remata</original>
+    </termo>
+    <termo>
+	<id>129</id>
+	<traducao>Tenki preense Data Remata</traducao>
+	<original>Preencha Data Remata</original>
+    </termo>
+    <termo>
+	<id>130</id>
+	<traducao>Kustu Traballador</traducao>
+	<original>Custo do Trabalhador</original>
+    </termo>
+    <termo>
+	<id>131</id>
+	<traducao>Tenki preense Kustu Traballador</traducao>
+	<original>Preencha o Custo do Trabalhador</original>
+    </termo>
+    <termo>
+	<id>132</id>
+	<traducao>Traballador hira</traducao>
+	<original>Traballador hira</original>
+    </termo>
+    <termo>
+	<id>133</id>
+	<traducao>Tenki preense Traballador hira</traducao>
+	<original>Preencha Traballador hira</original>
+    </termo>
+    <termo>
+	<id>134</id>
+	<traducao>Loron servisu</traducao>
+	<original>Loron servisu</original>
+    </termo>
+    <termo>
+	<id>135</id>
+	<traducao>Tenki preense Loron servisu</traducao>
+	<original>Preencha Loron servisu</original>
+    </termo>
+    <termo>
+	<id>136</id>
+	<traducao>Kustu Total</traducao>
+	<original>Kustu Total</original>
+    </termo>
+    <termo>
+	<id>137</id>
+	<traducao>Tenki preense Kustu Total</traducao>
+	<original>Preencha Kustu Total</original>
+    </termo>
+    <termo>
+	<id>138</id>
+	<traducao>Kontraktu Profile</traducao>
+	<original>Perfil Contrato</original>
+    </termo>
+    <termo>
+	<id>139</id>
+	<traducao>Benefisiariu sira</traducao>
+	<original>Contratados</original>
+    </termo>
+    <termo>
+	<id>140</id>
+	<traducao>Path</traducao>
+	<original>Path</original>
+    </termo>
+    <termo>
+	<id>141</id>
+	<traducao>Buka</traducao>
+	<original>Buscar</original>
+    </termo>
+    <termo>
+	<id>142</id>
+	<traducao>Buka benefisiariu</traducao>
+	<original>Busca beneficiário</original>
+    </termo>
+    <termo>
+	<id>143</id>
+	<traducao>Salariu Loron</traducao>
+	<original>Salário do dia</original>
+    </termo>
+    <termo>
+	<id>144</id>
+	<traducao>Tenki preense salariu ba kada loron</traducao>
+	<original>Preencha o salário do dia</original>
+    </termo>
+    <termo>
+	<id>145</id>
+	<traducao>Total Salariu</traducao>
+	<original>Salário total</original>
+    </termo>
+    <termo>
+	<id>146</id>
+	<traducao>Tenki preense salariu total</traducao>
+	<original>Preencha o salário total</original>
+    </termo>
+    <termo>
+	<id>147</id>
+	<traducao>Data Pagamentu</traducao>
+	<original>Data de pagamento</original>
+    </termo>
+    <termo>
+	<id>148</id>
+	<traducao>Tenki preense data pagamentu</traducao>
+	<original>Preencha a data de pagamento</original>
+    </termo>
+    <termo>
+	<id>149</id>
+	<traducao>Tenki preense total loron</traducao>
+	<original>Preencha o total de dias</original>
+    </termo>
+    <termo>
+	<id>150</id>
+	<traducao>La bele asesu</traducao>
+	<original>Acesso Negado</original>
+    </termo>
+    <termo>
+	<id>151</id>
+	<traducao>Iha erro</traducao>
+	<original>Ocorreu um erro</original>
+    </termo>
+    <termo>
+	<id>152</id>
+	<traducao>Ita koko asesu ba pagina que ita la bele asesa</traducao>
+	<original>Você tentou acessar uma página não permitida</original>
+    </termo>
+    <termo>
+	<id>153</id>
+	<traducao>Você tentou executar uma operação com a qual o sistema se comportou de forma inadequada</traducao>
+	<original>Você tentou executar uma operação com a qual o sistema se comportou de forma inadequada</original>
+    </termo>
+    <termo>
+	<id>154</id>
+	<traducao>Tamba</traducao>
+	<original>Causas</original>
+    </termo>
+    <termo>
+	<id>155</id>
+	<traducao>Rota</traducao>
+	<original>Rota</original>
+    </termo>
+    <termo>
+	<id>156</id>
+	<traducao>Hili minimu benefisiariu 1(ida)</traducao>
+	<original>Escolha pelo menos 1(um) Beneficiário</original>
+    </termo>
+    <termo>
+	<id>157</id>
+	<traducao>Kontraktus</traducao>
+	<original>Contratos</original>
+    </termo>
+    <termo>
+	<id>158</id>
+	<traducao>Kurso</traducao>
+	<original>Curso da turma</original>
+    </termo>
+    <termo>
+	<id>159</id>
+	<traducao>Partisipantes</traducao>
+	<original>Lista de participante</original>
+    </termo>
+    <termo>
+	<id>160</id>
+	<traducao>Testes</traducao>
+	<original>Testes</original>
+    </termo>
+    <termo>
+	<id>161</id>
+	<traducao>Remata</traducao>
+	<original>Avaliação do treinamento</original>
+    </termo>
+    <termo>
+	<id>162</id>
+	<traducao>Tinan</traducao>
+	<original>Ano</original>
+    </termo>
+    <termo>
+	<id>163</id>
+	<traducao>Esperiensia Servisu</traducao>
+	<original>Esperiensia Servisu</original>
+    </termo>
+    <termo>
+	<id>164</id>
+	<traducao>La iha servisu</traducao>
+	<original>La iha servisu</original>
+    </termo>
+    <termo>
+	<id>165</id>
+	<traducao>Iha servisu</traducao>
+	<original>Iha servisu</original>
+    </termo>
+    <termo>
+	<id>166</id>
+	<traducao>Estudante</traducao>
+	<original>Estudante</original>
+    </termo>
+    <termo>
+	<id>167</id>
+	<traducao>Kabennain</traducao>
+	<original>Kabennain</original>
+    </termo>
+    <termo>
+	<id>168</id>
+	<traducao>Solteiru</traducao>
+	<original>Solteiru</original>
+    </termo>
+    <termo>
+	<id>169</id>
+	<traducao>Divors</traducao>
+	<original>Divors</original>
+    </termo>
+    <termo>
+	<id>170</id>
+	<traducao>Faluk</traducao>
+	<original>Faluk</original>
+    </termo>
+    <termo>
+	<id>171</id>
+	<traducao>Data pagamentu labele mais que ohin.</traducao>
+	<original>Data de pagamento não pode ser maior que a data atual.</original>
+    </termo>
+    <termo>
+	<id>172</id>
+	<traducao>Naran Turma</traducao>
+	<original>Nome turma</original>
+    </termo>
+    <termo>
+	<id>173</id>
+	<traducao>Tenki preensi naran turma</traducao>
+	<original>Preencha o nome da turma</original>
+    </termo>
+    <termo>
+	<id>174</id>
+	<traducao>Data Tama</traducao>
+	<original>Data inicial</original>
+    </termo>
+    <termo>
+	<id>175</id>
+	<traducao>Tenki preensi data Tama</traducao>
+	<original>Preencha a data inicial</original>
+    </termo>
+    <termo>
+	<id>176</id>
+	<traducao>Data tama ba turma</traducao>
+	<original>Data inicial da turma</original>
+    </termo>
+    <termo>
+	<id>177</id>
+	<traducao>Data Plano Ramata</traducao>
+	<original>Data final</original>
+    </termo>
+    <termo>
+	<id>178</id>
+	<traducao>Tenki preensi data remata</traducao>
+	<original>Preencha a data final</original>
+    </termo>
+    <termo>
+	<id>179</id>
+	<traducao>Data remata ba turma</traducao>
+	<original>Data final da turma</original>
+    </termo>
+    <termo>
+	<id>180</id>
+	<traducao>Partisipante Mane Hira</traducao>
+	<original>Homens</original>
+    </termo>
+    <termo>
+	<id>181</id>
+	<traducao>Tenki preensi partisipante mane hira</traducao>
+	<original>Preencha a quantidade de participantes homens</original>
+    </termo>
+    <termo>
+	<id>182</id>
+	<traducao>Kuantidade mane</traducao>
+	<original>Quantidade de participantes homens</original>
+    </termo>
+    <termo>
+	<id>183</id>
+	<traducao>Partisipante Feto Hira</traducao>
+	<original>Mulheres</original>
+    </termo>
+    <termo>
+	<id>184</id>
+	<traducao>Tenki preensi fetu hira</traducao>
+	<original>Preencha a quantidade de participantes mulheres</original>
+    </termo>
+    <termo>
+	<id>185</id>
+	<traducao>kuantidade fetu</traducao>
+	<original>Quantidade de participantes mulheres</original>
+    </termo>
+    <termo>
+	<id>186</id>
+	<traducao>Total Partisipante Hira</traducao>
+	<original>Total Partisipante Hira</original>
+    </termo>
+    <termo>
+	<id>187</id>
+	<traducao>Total partisipante hira</traducao>
+	<original>Total de participantes</original>
+    </termo>
+    <termo>
+	<id>188</id>
+	<traducao>Oras Tama</traducao>
+	<original>Horário inicial</original>
+    </termo>
+    <termo>
+	<id>189</id>
+	<traducao>Oras tama ba turma</traducao>
+	<original>Horário inicial da turma</original>
+    </termo>
+    <termo>
+	<id>190</id>
+	<traducao>Oras Sai</traducao>
+	<original>Horário final</original>
+    </termo>
+    <termo>
+	<id>191</id>
+	<traducao>Oras sai ba turma</traducao>
+	<original>Horário final da turma</original>
+    </termo>
+    <termo>
+	<id>192</id>
+	<traducao>Loron Hira</traducao>
+	<original>Tempo de duração</original>
+    </termo>
+    <termo>
+	<id>193</id>
+	<traducao>Tenki preensi loron hira</traducao>
+	<original>Preencha o tempo de duração do curso</original>
+    </termo>
+    <termo>
+	<id>194</id>
+	<traducao>Loron hira</traducao>
+	<original>Tempo de duração do curso</original>
+    </termo>
+    <termo>
+	<id>195</id>
+	<traducao>Valor Pagamentu</traducao>
+	<original>Valor Pagamento</original>
+    </termo>
+    <termo>
+	<id>196</id>
+	<traducao>Valor pagamentu ba kurso</traducao>
+	<original>Valor de pagamento do curso</original>
+    </termo>
+    <termo>
+	<id>197</id>
+	<traducao>Deskrisaun Pagamentu</traducao>
+	<original>Descrição do pagamento</original>
+    </termo>
+    <termo>
+	<id>198</id>
+	<traducao>Kusto Treinamentu</traducao>
+	<original>Custo treinamento</original>
+    </termo>
+    <termo>
+	<id>199</id>
+	<traducao>CDE Responsavel</traducao>
+	<original>CDE Responsável</original>
+    </termo>
+    <termo>
+	<id>200</id>
+	<traducao>Tenki hili mai husi ne'ebe</traducao>
+	<original>Selecione o CDE Responsável</original>
+    </termo>
+    <termo>
+	<id>201</id>
+	<traducao>Treinador Prinsipal</traducao>
+	<original>Treinador principal</original>
+    </termo>
+    <termo>
+	<id>202</id>
+	<traducao>Hili treinador prinsipal</traducao>
+	<original>Selecione o treinador principal</original>
+    </termo>
+    <termo>
+	<id>203</id>
+	<traducao>Treinador Asistente</traducao>
+	<original>Treinador assistente</original>
+    </termo>
+    <termo>
+	<id>204</id>
+	<traducao>H‎ili treinador assistente</traducao>
+	<original>Selecione o treinador assistente</original>
+    </termo>
+    <termo>
+	<id>205</id>
+	<traducao>Deskrisaun Turma</traducao>
+	<original>Descrição turma</original>
+    </termo>
+    <termo>
+	<id>206</id>
+	<traducao>Hare kampus obrigatorius ba formulariu ne'e.</traducao>
+	<original>Verifique os campos do formulário.</original>
+    </termo>
+    <termo>
+	<id>207</id>
+	<traducao>Hein...</traducao>
+	<original>Carregando</original>
+    </termo>
+    <termo>
+	<id>208</id>
+	<traducao>Resultadu</traducao>
+	<original>Resultados</original>
+    </termo>
+    <termo>
+	<id>209</id>
+	<traducao>Turma</traducao>
+	<original>Turma</original>
+    </termo>
+    <termo>
+	<id>210</id>
+	<traducao>Treinamentu</traducao>
+	<original>Treinamento</original>
+    </termo>
+    <termo>
+	<id>211</id>
+	<traducao>Buka Partisipantes Hotu-hotu</traducao>
+	<original>Participantes</original>
+    </termo>
+    <termo>
+	<id>212</id>
+	<traducao>Partisipantes Ba  Turma Ne'e</traducao>
+	<original>Participantes turma</original>
+    </termo>
+    <termo>
+	<id>213</id>
+	<traducao>Ba los</traducao>
+	<original>Avançar</original>
+    </termo>
+    <termo>
+	<id>214</id>
+	<traducao>Sai</traducao>
+	<original>Remover</original>
+    </termo>
+    <termo>
+	<id>215</id>
+	<traducao>Data inicial la diak</traducao>
+	<original>Data inicial inválida</original>
+    </termo>
+    <termo>
+	<id>216</id>
+	<traducao>Data final la diak</traducao>
+	<original>Data final inválida</original>
+    </termo>
+    <termo>
+	<id>217</id>
+	<traducao>Partisipante sira iha tiha ona</traducao>
+	<original>Todos participantes selecionados já estão na turma</original>
+    </termo>
+    <termo>
+	<id>218</id>
+	<traducao>Partisipante barak liu. Tenki hare total partisipante hira</traducao>
+	<original>Quantidade de participantes ultrapassa a definida. Verifique.</original>
+    </termo>
+    <termo>
+	<id>219</id>
+	<traducao>Kursuo</traducao>
+	<original>Curso</original>
+    </termo>
+    <termo>
+	<id>220</id>
+	<traducao>Hili kursu</traducao>
+	<original>Selecione o curso</original>
+    </termo>
+    <termo>
+	<id>221</id>
+	<traducao>Kompetensia</traducao>
+	<original>Competências</original>
+    </termo>
+    <termo>
+	<id>222</id>
+	<traducao>Unidade Kompetensia</traducao>
+	<original>Unidades de compentência</original>
+    </termo>
+    <termo>
+	<id>223</id>
+	<traducao>Numeru turma</traducao>
+	<original>Número turma</original>
+    </termo>
+    <termo>
+	<id>224</id>
+	<traducao>Total estudantes</traducao>
+	<original>Total de estudantes</original>
+    </termo>
+    <termo>
+	<id>225</id>
+	<traducao>Numero participante</traducao>
+	<original>Numero participante</original>
+    </termo>
+    <termo>
+	<id>226</id>
+	<traducao>Erro ba buka unidade kompetensia</traducao>
+	<original>Erro ao buscar unidades de compentência</original>
+    </termo>
+    <termo>
+	<id>227</id>
+	<traducao>Hili unidade Kompetensia</traducao>
+	<original>Selecione alguma unidade de compentência</original>
+    </termo>
+    <termo>
+	<id>228</id>
+	<traducao>Hili partisipante ba tuir ba turma ne'e</traducao>
+	<original>Selecione os participantes para inserir na turma</original>
+    </termo>
+    <termo>
+	<id>229</id>
+	<traducao>Erro ba halo rejistu partisipante</traducao>
+	<original>Erro ao cadastrar participantes</original>
+    </termo>
+    <termo>
+	<id>230</id>
+	<traducao>Hili participante sira ba sai</traducao>
+	<original>Selecione os participantes para remover</original>
+    </termo>
+    <termo>
+	<id>231</id>
+	<traducao>Hakarak sai participantes ne'e</traducao>
+	<original>Deseja realmente remover estes participantes</original>
+    </termo>
+    <termo>
+	<id>232</id>
+	<traducao>Erro, la bele sai participantes</traducao>
+	<original>Erro ao remover participantes</original>
+    </termo>
+    <termo>
+	<id>233</id>
+	<traducao>la rejista partisipante</traducao>
+	<original>Nenhum participante foi inserido</original>
+    </termo>
+    <termo>
+	<id>234</id>
+	<traducao>Treinador prinsipal iha assistente ne'e</traducao>
+	<original>Treinador principal já definido como assistente</original>
+    </termo>
+    <termo>
+	<id>235</id>
+	<traducao>Treinador assistente iha principal ne'e</traducao>
+	<original>Treinador secundário já definido como principal</original>
+    </termo>
+    <termo>
+	<id>236</id>
+	<traducao>Hili formasaun profissionau</traducao>
+	<original>Selecione as formações profissionais</original>
+    </termo>
+    <termo>
+	<id>237</id>
+	<traducao>Fatin Rekrutamentu</traducao>
+	<original>Fatin Rekrutamentu</original>
+    </termo>
+    <termo>
+	<id>238</id>
+	<traducao>Tenki preensi naram primeiru</traducao>
+	<original>Preencha o primeiro nome</original>
+    </termo>
+    <termo>
+	<id>239</id>
+	<traducao>Okupasaun</traducao>
+	<original>Okupasaun</original>
+    </termo>
+    <termo>
+	<id>240</id>
+	<traducao>Se Iha Servisu</traducao>
+	<original>Se Iha Servisu</original>
+    </termo>
+    <termo>
+	<id>241</id>
+	<traducao>Telemovel</traducao>
+	<original>Telemovel</original>
+    </termo>
+    <termo>
+	<id>242</id>
+	<traducao>Tenki preensi Telemovel</traducao>
+	<original>Preencha o Telemovel</original>
+    </termo>
+    <termo>
+	<id>243</id>
+	<traducao>Telefone seluk</traducao>
+	<original>Telefone seluk</original>
+    </termo>
+    <termo>
+	<id>244</id>
+	<traducao>Email</traducao>
+	<original>Email</original>
+    </termo>
+    <termo>
+	<id>245</id>
+	<traducao>Salariu</traducao>
+	<original>Salariu</original>
+    </termo>
+    <termo>
+	<id>246</id>
+	<traducao>Tenki preensi o Salariu</traducao>
+	<original>Preencha o Salariu</original>
+    </termo>
+    <termo>
+	<id>247</id>
+	<traducao>Salariu ba Tinan ida</traducao>
+	<original>Salariu ba Tinan ida</original>
+    </termo>
+    <termo>
+	<id>248</id>
+	<traducao>Tenki preensi salariu ba Tinan ida</traducao>
+	<original>Preencha o Salariu ba Tinan ida</original>
+    </termo>
+    <termo>
+	<id>249</id>
+	<traducao>Numeru Kliente</traducao>
+	<original>Numeru Kliente</original>
+    </termo>
+    <termo>
+	<id>250</id>
+	<traducao>Data Hari labele mais que data Remata</traducao>
+	<original>Data Hari não pode ser maior que a data Remata</original>
+    </termo>
+    <termo>
+	<id>251</id>
+	<traducao>Tipu Dokumentu</traducao>
+	<original>Tipo documento</original>
+    </termo>
+    <termo>
+	<id>252</id>
+	<traducao>Num. Dokumentu</traducao>
+	<original>Númedo do Documento</original>
+    </termo>
+    <termo>
+	<id>253</id>
+	<traducao>Fatin Dokumentu</traducao>
+	<original>Fatin Dokumentus</original>
+    </termo>
+    <termo>
+	<id>254</id>
+	<traducao>Data Dokumentu</traducao>
+	<original>Data Dokumentus</original>
+    </termo>
+    <termo>
+	<id>255</id>
+	<traducao>Kliente</traducao>
+	<original>Cliente</original>
+    </termo>
+    <termo>
+	<id>256</id>
+	<traducao>Numeru Kliente</traducao>
+	<original>Número Cliente</original>
+    </termo>
+    <termo>
+	<id>257</id>
+	<traducao>Buka</traducao>
+	<original>Buscar</original>
+    </termo>
+    <termo>
+	<id>258</id>
+	<traducao>La bele halo test ne'e</traducao>
+	<original>Execute o teste anterior primeiro</original>
+    </termo>
+    <termo>
+	<id>259</id>
+	<traducao>Pos</traducao>
+	<original>Pos</original>
+    </termo>
+    <termo>
+	<id>260</id>
+	<traducao>Pre</traducao>
+	<original>Pre</original>
+    </termo>
+    <termo>
+	<id>261</id>
+	<traducao>P.A.</traducao>
+	<original>P.A.</original>
+    </termo>
+    <termo>
+	<id>262</id>
+	<traducao>Teste</traducao>
+	<original>Teste</original>
+    </termo>
+    <termo>
+	<id>263</id>
+	<traducao>Score</traducao>
+	<original>Score</original>
+    </termo>
+    <termo>
+	<id>264</id>
+	<traducao>Hili treinador assistente</traducao>
+	<original>Selecione algum treinador assistente</original>
+    </termo>
+    <termo>
+	<id>265</id>
+	<traducao>Hili partisipante ba informa test</traducao>
+	<original>Selecione o participante para efetuar o teste</original>
+    </termo>
+    <termo>
+	<id>266</id>
+	<traducao>Erro buka test</traducao>
+	<original>Erro ao buscar testes</original>
+    </termo>
+    <termo>
+	<id>267</id>
+	<traducao>Tenki preensi score</traducao>
+	<original>Preencha este score</original>
+    </termo>
+    <termo>
+	<id>268</id>
+	<traducao>Erro ba buka partisipante</traducao>
+	<original>Erro ao buscar participantes</original>
+    </termo>
+    <termo>
+	<id>269</id>
+	<traducao>Hili test ba Halot</traducao>
+	<original>Selecione o teste para realizar a execução</original>
+    </termo>
+    <termo>
+	<id>270</id>
+	<traducao>La iha kompetensia ba halo test</traducao>
+	<original>Sem unidades de compentência para realizar teste</original>
+    </termo>
+    <termo>
+	<id>271</id>
+	<traducao>Registu partisipante</traducao>
+	<original>Registro participantes</original>
+    </termo>
+    <termo>
+	<id>272</id>
+	<traducao>Registu turma</traducao>
+	<original>Registro turma</original>
+    </termo>
+    <termo>
+	<id>273</id>
+	<traducao>Empreza</traducao>
+	<original>Empreza</original>
+    </termo>
+    <termo>
+	<id>274</id>
+	<traducao>Registu Empreza</traducao>
+	<original>Registro Empreza</original>
+    </termo>
+    <termo>
+	<id>275</id>
+	<traducao>Documentu iha tiha ona</traducao>
+	<original>Documento já cadastrado para este participante</original>
+    </termo>
+    <termo>
+	<id>276</id>
+	<traducao>Registu Participante</traducao>
+	<original>Registro de Participantes</original>
+    </termo>
+    <termo>
+	<id>277</id>
+	<traducao>Nasaun</traducao>
+	<original>Nasaun</original>
+    </termo>
+    <termo>
+	<id>278</id>
+	<traducao>Kodigu Postal</traducao>
+	<original>Kodigu Postal</original>
+    </termo>
+    <termo>
+	<id>279</id>
+	<traducao>Data Hahu</traducao>
+	<original>Data Hahu</original>
+    </termo>
+    <termo>
+	<id>280</id>
+	<traducao>Posisaun</traducao>
+	<original>Posisaun</original>
+    </termo>
+    <termo>
+	<id>281</id>
+	<traducao>Empreza</traducao>
+	<original>Empreza</original>
+    </termo>
+    <termo>
+	<id>282</id>
+	<traducao>Deskrisaun konaba</traducao>
+	<original>Deskrisaun konaba</original>
+    </termo>
+    <termo>
+	<id>283</id>
+	<traducao>Experiensia</traducao>
+	<original>Experiencia</original>
+    </termo>
+    <termo>
+	<id>284</id>
+	<traducao>Rejistrasaun Empreza</traducao>
+	<original>Registro de Empreza</original>
+    </termo>
+    <termo>
+	<id>285</id>
+	<traducao>Emprezas</traducao>
+	<original>Emprezas</original>
+    </termo>
+    <termo>
+	<id>296</id>
+	<traducao>Ilha Rejistu()</traducao>
+	<original>Ilha Rejistu()</original>
+    </termo>
+    <termo>
+	<id>297</id>
+	<traducao>Sim</traducao>
+	<original>Sim</original>
+    </termo>
+    <termo>
+	<id>298</id>
+	<traducao>Lai</traducao>
+	<original>Lai</original>
+    </termo>
+    <termo>
+	<id>299</id>
+	<traducao>Tinan Hari</traducao>
+	<original>Tinan Hari</original>
+    </termo>
+    <termo>
+	<id>300</id>
+	<traducao>Numeru Rejistu(MTCI)</traducao>
+	<original>Numeru Rejistu(MTCI)</original>
+    </termo>
+    <termo>
+	<id>301</id>
+	<traducao>Numeru Rejistu(MJ)</traducao>
+	<original>Numeru Rejistu(MJ)</original>
+    </termo>
+    <termo>
+	<id>302</id>
+	<traducao>Data Rejistu(MTCI)</traducao>
+	<original>Data Rejistu(MTCI)</original>
+    </termo>
+    <termo>
+	<id>303</id>
+	<traducao>Data Rejistu(MJ)</traducao>
+	<original>Data Rejistu(MJ)</original>
+    </termo>
+    <termo>
+	<id>304</id>
+	<traducao>Naran Empreza</traducao>
+	<original>Naran Empreza</original>
+    </termo>
+    <termo>
+	<id>305</id>
+	<traducao>Membru CCI-TL()</traducao>
+	<original>Membru CCI-TL()</original>
+    </termo>
+    <termo>
+	<id>306</id>
+	<traducao>Asosiasaum saida()</traducao>
+	<original>Asosiasaum saida()</original>
+    </termo>
+    <termo>
+	<id>307</id>
+	<traducao>Kontaktu</traducao>
+	<original>Contato</original>
+    </termo>
+    <termo>
+	<id>308</id>
+	<traducao>Telefone Eskritoriu</traducao>
+	<original>Telefone Eskritoriu</original>
+    </termo>
+    <termo>
+	<id>309</id>
+	<traducao>Telefone Fax</traducao>
+	<original>Telefone Fax</original>
+    </termo>
+    <termo>
+	<id>310</id>
+	<traducao>Telemovel(1)</traducao>
+	<original>Telemovel(1)</original>
+    </termo>
+    <termo>
+	<id>311</id>
+	<traducao>Telemovel(2)</traducao>
+	<original>Telemovel(2)</original>
+    </termo>
+    <termo>
+	<id>312</id>
+	<traducao>Website</traducao>
+	<original>Website</original>
+    </termo>
+    <termo>
+	<id>313</id>
+	<traducao>Naran Diretor/Na'in</traducao>
+	<original>Naran Diretor/Na'in</original>
+    </termo>
+    <termo>
+	<id>314</id>
+	<traducao>Sekxu Diretor/Na'in</traducao>
+	<original>Sekxu Diretor/Na'in</original>
+    </termo>
+    <termo>
+	<id>315</id>
+	<traducao>Partisipante</traducao>
+	<original>Partisipante Treino</original>
+    </termo>
+    <termo>
+	<id>316</id>
+	<traducao>Volume Negosiu</traducao>
+	<original>Volume Negosiu</original>
+    </termo>
+    <termo>
+	<id>317</id>
+	<traducao>Traballador Feto</traducao>
+	<original>Traballador Feto</original>
+    </termo>
+    <termo>
+	<id>318</id>
+	<traducao>Traballador Mane</traducao>
+	<original>Traballador Mane</original>
+    </termo>
+    <termo>
+	<id>319</id>
+	<traducao>Total Traballador</traducao>
+	<original>Total Traballador</original>
+    </termo>
+    <termo>
+	<id>320</id>
+	<traducao>Volume Negosiu</traducao>
+	<original>Volume Negosiu</original>
+    </termo>
+    <termo>
+	<id>321</id>
+	<traducao>La iha pagamentu ba kontrakto ne\'e.</traducao>
+	<original>Não possui pagamento para este contrato</original>
+    </termo>
+    <termo>
+	<id>322</id>
+	<traducao>Erro ba buka partisipante treinamentu</traducao>
+	<original>Erro ao buscar clientes</original>
+    </termo>
+    <termo>
+	<id>323</id>
+	<traducao>Partisipante Treinamentu</traducao>
+	<original>Clientes</original>
+    </termo>
+    <termo>
+	<id>324</id>
+	<traducao>Membru sira iha Empreza Ne'e</traducao>
+	<original>Clientes Empreza</original>
+    </termo>
+    <termo>
+	<id>325</id>
+	<traducao>Kliente la iha rejistu</traducao>
+	<original>Nenhum cliente foi inserido</original>
+    </termo>
+    <termo>
+	<id>326</id>
+	<traducao>Hili ema ida ba rejistu ba empreza</traducao>
+	<original>Selecione os clientes para inserir na Empreza</original>
+    </termo>
+    <termo>
+	<id>327</id>
+	<traducao>Partisipante hotu iha membru empreza tiha ona</traducao>
+	<original>Todos clientes selecionados já estão na Empreza</original>
+    </termo>
+    <termo>
+	<id>328</id>
+	<traducao>Partisipante barak liu. Tenki hare total partisipante hira</traducao>
+	<original>Quantidade de clientes ultrapassa a definida. Verifique</original>
+    </termo>
+    <termo>
+	<id>329</id>
+	<traducao>Erro ba rejistu kliente</traducao>
+	<original>Erro ao cadastrar clientes</original>
+    </termo>
+    <termo>
+	<id>330</id>
+	<traducao>Hili</traducao>
+	<original>Selecione</original>
+    </termo>
+    <termo>
+	<id>331</id>
+	<traducao>Estrutura Negosiu</traducao>
+	<original>Estrutura Negosiu</original>
+    </termo>
+    <termo>
+	<id>332</id>
+	<traducao>Sub-Sektor</traducao>
+	<original>Sub-Sector</original>
+    </termo>
+    <termo>
+	<id>333</id>
+	<traducao>Distritu Operasi</traducao>
+	<original>Distritu Operasi</original>
+    </termo>
+    <termo>
+	<id>334</id>
+	<traducao>Mai husi ne'ebe</traducao>
+	<original>Fatin (CDE) Rejistu</original>
+    </termo>
+    <termo>
+	<id>335</id>
+	<traducao>Numeru Empreza</traducao>
+	<original>Numeru Empreza</original>
+    </termo>
+    <termo>
+	<id>336</id>
+	<traducao>Tipu Negosiu</traducao>
+	<original>Tipu Negosiu</original>
+    </termo>
+    <termo>
+	<id>337</id>
+	<traducao>Hili Distritu Operasi</traducao>
+	<original>Selecione algum Distritu Operasi</original>
+    </termo>
+    <termo>
+	<id>338</id>
+	<traducao>Empreza partisipante treinamentu()</traducao>
+	<original>Ilha Kliente()</original>
+    </termo>
+    <termo>
+	<id>339</id>
+	<traducao>Kodigu Empreza</traducao>
+	<original>Código da Empreza</original>
+    </termo>
+    <termo>
+	<id>340</id>
+	<traducao>Hili Kliente ba sai</traducao>
+	<original>Selecione os clientes para remover</original>
+    </termo>
+    <termo>
+	<id>341</id>
+	<traducao>hakarak sai kliente iha ne'e</traducao>
+	<original>Deseja realmente remover estes cliente</original>
+    </termo>
+    <termo>
+	<id>342</id>
+	<traducao>Erro la bele sai kliente ne'e</traducao>
+	<original>Erro ao remover clientes</original>
+    </termo>
+    <termo>
+	<id>343</id>
+	<traducao>Volume Vendas</traducao>
+	<original>Volume Vendas</original>
+    </termo>
+    <termo>
+	<id>344</id>
+	<traducao>Tipo Volume</traducao>
+	<original>Tipo Volume</original>
+    </termo>
+    <termo>
+	<id>345</id>
+	<traducao>Valor Fulan</traducao>
+	<original>Valor Fulan</original>
+    </termo>
+    <termo>
+	<id>346</id>
+	<traducao>Valor Tinan</traducao>
+	<original>Valor Tinan</original>
+    </termo>
+    <termo>
+	<id>347</id>
+	<traducao>Data Rijistu</traducao>
+	<original>Data Rijistu</original>
+    </termo>
+    <termo>
+	<id>348</id>
+	<traducao>Enderesu Eskritoriu</traducao>
+	<original>Enderesu Eskritoriu</original>
+    </termo>
+    <termo>
+	<id>349</id>
+	<traducao>Vila</traducao>
+	<original>Vila</original>
+    </termo>
+    <termo>
+	<id>350</id>
+	<traducao>Tipu Enderesu</traducao>
+	<original>Tipu Enderesu</original>
+    </termo>
+    <termo>
+	<id>351</id>
+	<traducao>Fila</traducao>
+	<original>Voltar</original>
+    </termo>
+    <termo>
+	<id>352</id>
+	<traducao>Hili Distritu Operasi</traducao>
+	<original>Selecione algum Distritu Operasi</original>
+    </termo>
+    <termo>
+	<id>353</id>
+	<traducao>Erro ba buka sub-sector</traducao>
+	<original>Erro ao buscar sub-sector</original>
+    </termo>
+    <termo>
+	<id>354</id>
+	<traducao>Hili Sub Sektor ida</traducao>
+	<original>Selecione algum Sub Sector</original>
+    </termo>
+    <termo>
+	<id>355</id>
+	<traducao>Tenki informa numero ho data MJ</traducao>
+	<original>Preencha o numero e data MJ</original>
+    </termo>
+    <termo>
+	<id>356</id>
+	<traducao>Tenki preensi Numeru Lisensa (MTCI) ka Numeru Rejistu (MJ) no data </traducao>
+	<original>Preencha Numeru Rejistu(MTCI) ou Numeru Rejistu(MJ) e sua data</original>
+    </termo>
+    <termo>
+	<id>357</id>
+	<traducao>Tenki preensi data MJ</traducao>
+	<original>Preencha a data MJ</original>
+    </termo>
+    <termo>
+	<id>358</id>
+	<traducao>Tenki preensi data MTCI</traducao>
+	<original>Preencha a data MTCI</original>
+    </termo>
+    <termo>
+	<id>359</id>
+	<traducao>Atividades treinadores</traducao>
+	<original>Atividades treinadores</original>
+    </termo>
+    <termo>
+	<id>360</id>
+	<traducao>Hotu-Hotu</traducao>
+	<original>Todos</original>
+    </termo>
+    <termo>
+	<id>361</id>
+	<traducao>Imprimi</traducao>
+	<original>Imprimir</original>
+    </termo>
+    <termo>
+	<id>362</id>
+	<traducao>Hare Relatoriu</traducao>
+	<original>Gerar Relatório</original>
+    </termo>
+    <termo>
+	<id>363</id>
+	<traducao>Andamento cada tinan</traducao>
+	<original>Andamento por mês</original>
+    </termo>
+    <termo>
+	<id>364</id>
+	<traducao>Desempenho treinamentu</traducao>
+	<original>Desempenho no treinamento</original>
+    </termo>
+    <termo>
+	<id>365</id>
+	<traducao>Evaluasaun treinadores</traducao>
+	<original>Evolução treinadores</original>
+    </termo>
+    <termo>
+	<id>366</id>
+	<traducao>Lista treinamentu</traducao>
+	<original>Lista treinamento</original>
+    </termo>
+    <termo>
+	<id>367</id>
+	<traducao>Partisipantes liu husi distrito/sexo</traducao>
+	<original>Participantes por distrito/sexo</original>
+    </termo>
+    <termo>
+	<id>368</id>
+	<traducao>Partisipantes liu husi nível de educação</traducao>
+	<original>Participantes por por nível de educação</original>
+    </termo>
+    <termo>
+	<id>369</id>
+	<traducao>Partisipantes liu husi grupu idade</traducao>
+	<original>Participantes por grupo de idade</original>
+    </termo>
+    <termo>
+	<id>370</id>
+	<traducao>Partisipantes liu husi sexo</traducao>
+	<original>Participantes por sexo</original>
+    </termo>
+    <termo>
+	<id>371</id>
+	<traducao>Treinamento liu husi distritu</traducao>
+	<original>Treinamento por distrito</original>
+    </termo>
+    <termo>
+	<id>372</id>
+	<traducao>Tinan</traducao>
+	<original>Mês</original>
+    </termo>
+    <termo>
+	<id>373</id>
+	<traducao>Mane</traducao>
+	<original>Homem</original>
+    </termo>
+    <termo>
+	<id>374</id>
+	<traducao>Feto</traducao>
+	<original>Mulher</original>
+    </termo>
+    <termo>
+	<id>375</id>
+	<traducao>Total geral</traducao>
+	<original>Total geral</original>
+    </termo>
+    <termo>
+	<id>376</id>
+	<traducao>Benefisiariu ba kada fulan/tinan</traducao>
+	<original>Beneficiários para cada mês/ano</original>
+    </termo>
+    <termo>
+	<id>377</id>
+	<traducao>Partisipante fetu X Mane liu husi fulan/tinan</traducao>
+	<original>Participantes Homem x Mulher por mês/ano</original>
+    </termo>
+    <termo>
+	<id>378</id>
+	<traducao>Persentagem partisipantes fulan/tinan</traducao>
+	<original>Porcentagem participantes mês/ano</original>
+    </termo>
+    <termo>
+	<id>379</id>
+	<traducao>Fulan</traducao>
+	<original>Meses</original>
+    </termo>
+    <termo>
+	<id>380</id>
+	<traducao>Treinador</traducao>
+	<original>Treinador</original>
+    </termo>
+    <termo>
+	<id>381</id>
+	<traducao>Prinsipal</traducao>
+	<original>Principal</original>
+    </termo>
+    <termo>
+	<id>382</id>
+	<traducao>Assistente</traducao>
+	<original>Assistente</original>
+    </termo>
+    <termo>
+	<id>383</id>
+	<traducao>Persentagem</traducao>
+	<original>Porcentagem</original>
+    </termo>
+    <termo>
+	<id>384</id>
+	<traducao>Partisipantes liu husi kurso</traducao>
+	<original>Participantes por curso</original>
+    </termo>
+    <termo>
+	<id>385</id>
+	<traducao>Benefisiariu Mane X Fetu kada Kursu</traducao>
+	<original>Beneficiário Homem x Mulher para cada curso</original>
+    </termo>
+    <termo>
+	<id>386</id>
+	<traducao>Sai</traducao>
+	<original>Melhorou</original>
+    </termo>
+    <termo>
+	<id>387</id>
+	<traducao>Hanesan</traducao>
+	<original>Igual</original>
+    </termo>
+    <termo>
+	<id>388</id>
+	<traducao>Tun</traducao>
+	<original>Piorou</original>
+    </termo>
+    <termo>
+	<id>389</id>
+	<traducao>Persentagem iha desempenhu ba benefisiariu</traducao>
+	<original>Porcentagem de desempenho do beneficiário</original>
+    </termo>
+    <termo>
+	<id>390</id>
+	<traducao>Desempenhu</traducao>
+	<original>Desempenho</original>
+    </termo>
+    <termo>
+	<id>391</id>
+	<traducao>Ladiak</traducao>
+	<original>Ladiak</original>
+    </termo>
+    <termo>
+	<id>392</id>
+	<traducao>Sufisiente</traducao>
+	<original>Sufisiente</original>
+    </termo>
+    <termo>
+	<id>393</id>
+	<traducao>Diak</traducao>
+	<original>Diak</original>
+    </termo>
+    <termo>
+	<id>394</id>
+	<traducao>Diak Liu</traducao>
+	<original>Diak Liu</original>
+    </termo>
+    <termo>
+	<id>395</id>
+	<traducao>Skor</traducao>
+	<original>Skor</original>
+    </termo>
+    <termo>
+	<id>396</id>
+	<traducao>Evaluasaun ba Treinamentu sira</traducao>
+	<original>Evaluasaun ba Treinamentu sira</original>
+    </termo>
+    <termo>
+	<id>397</id>
+	<traducao>Data Turma</traducao>
+	<original>Data Turma</original>
+    </termo>
+    <termo>
+	<id>398</id>
+	<traducao>Total de Participantes</traducao>
+	<original>Total de Participantes</original>
+    </termo>
+    <termo>
+	<id>399</id>
+	<traducao>Treinador Principal</traducao>
+	<original>Treinador Principal</original>
+    </termo>
+    <termo>
+	<id>400</id>
+	<traducao>Turma Remata ona</traducao>
+	<original>Turma finalizada</original>
+    </termo>
+    <termo>
+	<id>401</id>
+	<traducao>Participantes liu husi distritru</traducao>
+	<original>Participantes por distritro</original>
+    </termo>
+    <termo>
+	<id>402</id>
+	<traducao>Nivel Educasaun</traducao>
+	<original>Nível de Educação</original>
+    </termo>
+    <termo>
+	<id>403</id>
+	<traducao>Partisipantes Mane X Fetu kada nivel</traducao>
+	<original>Participantes Homem x Mulher para cada nível</original>
+    </termo>
+    <termo>
+	<id>404</id>
+	<traducao>Grupo de idade</traducao>
+	<original>Grupo de idade</original>
+    </termo>
+    <termo>
+	<id>405</id>
+	<traducao>Benefisiariu liu husi grupo de idade</traducao>
+	<original>Beneficiário por grupo de idade</original>
+    </termo>
+    <termo>
+	<id>406</id>
+	<traducao>Participantes treinamentu Mane X Fetu</traducao>
+	<original>Participantes treinamento Homem x Mulher</original>
+    </termo>
+    <termo>
+	<id>407</id>
+	<traducao>Relatorius</traducao>
+	<original>Relatórios</original>
+    </termo>
+    <termo>
+	<id>408</id>
+	<traducao>Empreza liu husi genero direktor</traducao>
+	<original>Empreza por gênero de diretor</original>
+    </termo>
+    <termo>
+	<id>409</id>
+	<traducao>Lista empreza</traducao>
+	<original>Lista Empreza</original>
+    </termo>
+    <termo>
+	<id>410</id>
+	<traducao>Emprezas liu husi distritu</traducao>
+	<original>Emprezas por distrito</original>
+    </termo>
+    <termo>
+	<id>411</id>
+	<traducao>Empreza liu husi volume de negosiu</traducao>
+	<original>Empreza por volume de negócio</original>
+    </termo>
+    <termo>
+	<id>412</id>
+	<traducao>Direktor / Genero</traducao>
+	<original>Diretor / Gênero</original>
+    </termo>
+    <termo>
+	<id>413</id>
+	<traducao>Kuantidade</traducao>
+	<original>Quantidade</original>
+    </termo>
+    <termo>
+	<id>414</id>
+	<traducao>Data Rejistu</traducao>
+	<original>Data Registro</original>
+    </termo>
+    <termo>
+	<id>415</id>
+	<traducao>Empreza</traducao>
+	<original>Empreza</original>
+    </termo>
+    <termo>
+	<id>416</id>
+	<traducao>Naran Empreza</traducao>
+	<original>Nome Empreza</original>
+    </termo>
+    <termo>
+	<id>417</id>
+	<traducao>Naran Direktor</traducao>
+	<original>Nome Diretor</original>
+    </termo>
+    <termo>
+	<id>418</id>
+	<traducao>Telefone</traducao>
+	<original>Telefone</original>
+    </termo>
+    <termo>
+	<id>419</id>
+	<traducao>Emprezariu Partisipante treinamentu</traducao>
+	<original>Empresário Cliente IADE</original>
+    </termo>
+    <termo>
+	<id>420</id>
+	<traducao>Total registu</traducao>
+	<original>Total de registros</original>
+    </termo>
+    <termo>
+	<id>421</id>
+	<traducao>Sektor empreza</traducao>
+	<original>Setores da Empreza</original>
+    </termo>
+    <termo>
+	<id>422</id>
+	<traducao>Volume negosio</traducao>
+	<original>Volume negocio</original>
+    </termo>
+    <termo>
+	<id>423</id>
+	<traducao>Home</traducao>
+	<original>Home</original>
+    </termo>
+    <termo>
+	<id>424</id>
+	<traducao>Andamento ba fulan</traducao>
+	<original>Andamento por Mês</original>
+    </termo>
+    <termo>
+	<id>425</id>
+	<traducao>Atividades treinadores</traducao>
+	<original>Atividades treinadores</original>
+    </termo>
+    <termo>
+	<id>426</id>
+	<traducao>Klasse Laran</traducao>
+	<original>Klasse Laran</original>
+    </termo>
+    <termo>
+	<id>427</id>
+	<traducao>Pratika ika kampu</traducao>
+	<original>Pratika ika kampu</original>
+    </termo>
+    <termo>
+	<id>428</id>
+	<traducao>Resultadu</traducao>
+	<original>Resultado</original>
+    </termo>
+    <termo>
+	<id>429</id>
+	<traducao>Hili valor</traducao>
+	<original>Selecione algum valor</original>
+    </termo>
+    <termo>
+	<id>430</id>
+	<traducao>Participante ne'e hili tiha ona</traducao>
+	<original>Participante escolhido</original>
+    </termo>
+    <termo>
+	<id>431</id>
+	<traducao>Distritu ba turma</traducao>
+	<original>Distrito da turma</original>
+    </termo>
+    <termo>
+	<id>432</id>
+	<traducao>LBT</traducao>
+	<original>LBT</original>
+    </termo>
+    <termo>
+	<id>433</id>
+	<traducao>MTC</traducao>
+	<original>MTC</original>
+    </termo>
+    <termo>
+	<id>434</id>
+	<traducao>Hili kurso ba turma</traducao>
+	<original>Selecione o curso da turma</original>
+    </termo>
+    <termo>
+	<id>435</id>
+	<traducao>Hili tipu turma</traducao>
+	<original>Selecione o tipo da turma</original>
+    </termo>
+    <termo>
+	<id>436</id>
+	<traducao>ID Treinamentu</traducao>
+	<original>ID Treinamento</original>
+    </termo>
+    <termo>
+	<id>437</id>
+	<traducao>Kontraktu Record</traducao>
+	<original>Kontraktu Record</original>
+    </termo>
+    <termo>
+	<id>438</id>
+	<traducao>Empreza/Kontraktu</traducao>
+	<original>Empreza/Contrato</original>
+    </termo>
+    <termo>
+	<id>439</id>
+	<traducao>Kontraktus iha link ba Empreza</traducao>
+	<original>Contratos vinculados a Empreza</original>
+    </termo>
+    <termo>
+	<id>440</id>
+	<traducao>Buka Empreza ba kontraktu ne'e</traducao>
+	<original>Busca Empreza / Companhia para o contrato</original>
+    </termo>
+    <termo>
+	<id>441</id>
+	<traducao>ID Empreza</traducao>
+	<original>ID Empreza</original>
+    </termo>
+    <termo>
+	<id>442</id>
+	<traducao>Empreza hili tiha ona</traducao>
+	<original>Empreza selecionada</original>
+    </termo>
+    <termo>
+	<id>443</id>
+	<traducao>Husu</traducao>
+	<original>Husu</original>
+    </termo>
+    <termo>
+	<id>444</id>
+	<traducao>Diak Liu</traducao>
+	<original>Diak Liu</original>
+    </termo>
+    <termo>
+	<id>445</id>
+	<traducao>Diak</traducao>
+	<original>Diak</original>
+    </termo>
+    <termo>
+	<id>446</id>
+	<traducao>Sufisiente</traducao>
+	<original>Sufisiente</original>
+    </termo>
+    <termo>
+	<id>447</id>
+	<traducao>Ladiak</traducao>
+	<original>Ladiak</original>
+    </termo>
+    <termo>
+	<id>448</id>
+	<traducao>Sub total</traducao>
+	<original>Sub total</original>
+    </termo>
+    <termo>
+	<id>449</id>
+	<traducao>Kriteriu sira</traducao>
+	<original>Critério</original>
+    </termo>
+    <termo>
+	<id>450</id>
+	<traducao>Taka turma</traducao>
+	<original>Fechar turma</original>
+    </termo>
+    <termo>
+	<id>451</id>
+	<traducao>Valor Kontraktu</traducao>
+	<original>Valor Kontraktu</original>
+    </termo>
+    <termo>
+	<id>452</id>
+	<traducao>Tenki preense valor kontraktu</traducao>
+	<original>Preencha o valor do contrato</original>
+    </termo>
+    <termo>
+	<id>453</id>
+	<traducao>Referensia</traducao>
+	<original>Referência</original>
+    </termo>
+    <termo>
+	<id>454</id>
+	<traducao>Progress payment</traducao>
+	<original>Progress payment</original>
+    </termo>
+    <termo>
+	<id>455</id>
+	<traducao>Data</traducao>
+	<original>Data</original>
+    </termo>
+    <termo>
+	<id>456</id>
+	<traducao>Cert. No</traducao>
+	<original>Cert. No</original>
+    </termo>
+    <termo>
+	<id>457</id>
+	<traducao>Categoria</traducao>
+	<original>Categoria</original>
+    </termo>
+    <termo>
+	<id>458</id>
+	<traducao>Origem pagamento</traducao>
+	<original>Origem pagamento</original>
+    </termo>
+    <termo>
+	<id>459</id>
+	<traducao>Invoice amount</traducao>
+	<original>Invoice amount</original>
+    </termo>
+    <termo>
+	<id>460</id>
+	<traducao>Net Payment</traducao>
+	<original>Net Payment</original>
+    </termo>
+    <termo>
+	<id>461</id>
+	<traducao>Amount</traducao>
+	<original>Amount</original>
+    </termo>
+    <termo>
+	<id>462</id>
+	<traducao>Advances</traducao>
+	<original>Advances</original>
+    </termo>
+    <termo>
+	<id>463</id>
+	<traducao>Retention</traducao>
+	<original>Retention</original>
+    </termo>
+    <termo>
+	<id>464</id>
+	<traducao>Contract balance</traducao>
+	<original>Contract balance</original>
+    </termo>
+    <termo>
+	<id>465</id>
+	<traducao>Finan. % Compl.</traducao>
+	<original>Finan. % Compl.</original>
+    </termo>
+    <termo>
+	<id>466</id>
+	<traducao>Invoices</traducao>
+	<original>Invoices</original>
+    </termo>
+    <termo>
+	<id>467</id>
+	<traducao>Net Pays</traducao>
+	<original>Net Pays</original>
+    </termo>
+    <termo>
+	<id>468</id>
+	<traducao>Progress Pay</traducao>
+	<original>Progress Pay</original>
+    </termo>
+    <termo>
+	<id>469</id>
+	<traducao>Retentions</traducao>
+	<original>Retentions</original>
+    </termo>
+    <termo>
+	<id>470</id>
+	<traducao>Balances</traducao>
+	<original>Balances</original>
+    </termo>
+    <termo>
+	<id>471</id>
+	<traducao>% Compl.</traducao>
+	<original>% Compl.</original>
+    </termo>
+    <termo>
+	<id>472</id>
+	<traducao>Total kontraktu</traducao>
+	<original>Total kontrakto</original>
+    </termo>
+    <termo>
+	<id>473</id>
+	<traducao>Tenki preense data</traducao>
+	<original>Preencha a data</original>
+    </termo>
+    <termo>
+	<id>474</id>
+	<traducao>Hili categoria</traducao>
+	<original>Selecone a categoria</original>
+    </termo>
+    <termo>
+	<id>475</id>
+	<traducao>First Advance</traducao>
+	<original>First Advance</original>
+    </termo>
+    <termo>
+	<id>476</id>
+	<traducao>Wages</traducao>
+	<original>Wages</original>
+    </termo>
+    <termo>
+	<id>477</id>
+	<traducao>Works</traducao>
+	<original>Works</original>
+    </termo>
+    <termo>
+	<id>478</id>
+	<traducao>Hili origem pagamentu</traducao>
+	<original>Selecione a origem do pagamento</original>
+    </termo>
+    <termo>
+	<id>479</id>
+	<traducao>Tenki preense invoice amount</traducao>
+	<original>Preencha o invoice amount</original>
+    </termo>
+    <termo>
+	<id>480</id>
+	<traducao>Tenki preense amount</traducao>
+	<original>Preencha o amount</original>
+    </termo>
+    <termo>
+	<id>481</id>
+	<traducao>Tenki preense retention</traducao>
+	<original>Preencha o retention</original>
+    </termo>
+    <termo>
+	<id>482</id>
+	<traducao>Tenki preense advances</traducao>
+	<original>Preencha o advances</original>
+    </termo>
+    <termo>
+	<id>483</id>
+	<traducao>Tenki preense net payment</traducao>
+	<original>Preencha o net payment</original>
+    </termo>
+    <termo>
+	<id>484</id>
+	<traducao>Kontraktu Balance</traducao>
+	<original>Kontraktu Balance</original>
+    </termo>
+    <termo>
+	<id>485</id>
+	<traducao>Tenki preense kontratu balance</traducao>
+	<original>Preencha a kontratu balance</original>
+    </termo>
+    <termo>
+	<id>486</id>
+	<traducao>Selecione o cert. no</traducao>
+	<original>Selecione o cert. no</original>
+    </termo>
+    <termo>
+	<id>487</id>
+	<traducao>Hamos</traducao>
+	<original>Hamos</original>
+    </termo>
+    <termo>
+	<id>488</id>
+	<traducao>Assessment</traducao>
+	<original>Assessment</original>
+    </termo>
+    <termo>
+	<id>489</id>
+	<traducao>Evoluasaun</traducao>
+	<original>Evolução</original>
+    </termo>
+    <termo>
+	<id>490</id>
+	<traducao>Loron (Data) Planu Ramata Turma</traducao>
+	<original>Loron (Data) Planu Ramata Turma</original>
+    </termo>
+    <termo>
+	<id>491</id>
+	<traducao>Iha Rejistu Kursu nia Kompetensia (?)</traducao>
+	<original>Iha Rejistu Kursu nia Kompetensia (?)</original>
+    </termo>
+    <termo>
+	<id>492</id>
+	<traducao>Iha Rejistu Partisipante Sira Kompleto ()</traducao>
+	<original>Iha Rejistu Partisipante Sira Kompleto ()</original>
+    </termo>
+    <termo>
+	<id>493</id>
+	<traducao>Hare performance assessment ba participantes hotu-hotu</traducao>
+	<original>Verifique o performance assessment para todos os participantes</original>
+    </termo>
+    <termo>
+	<id>494</id>
+	<traducao>Iha Rejistu Pre - Test ()</traducao>
+	<original>Iha Rejistu Pre - Test ()</original>
+    </termo>
+    <termo>
+	<id>495</id>
+	<traducao>Iha Rejistu Pos - Test ()</traducao>
+	<original>Iha Rejistu Pos - Test ()</original>
+    </termo>
+    <termo>
+	<id>496</id>
+	<traducao>Iha Rejistu Evaluasaum Treinamentu ()</traducao>
+	<original>Iha Rejistu Evaluasaum Treinamentu ()</original>
+    </termo>
+    <termo>
+	<id>497</id>
+	<traducao>ERRO: Ita boot iha rejistu empreza tiha ona ba kontraktu ne'e.</traducao>
+	<original>ERRO: Ita boot iha rejistu empreza tiha ona ba kontraktu ne'e.</original>
+    </termo>
+    <termo>
+	<id>498</id>
+	<traducao>Erro ba buka Emprezas</traducao>
+	<original>Erro ao buscar Emprezas</original>
+    </termo>
+    <termo>
+	<id>499</id>
+	<traducao>Hili Empreza ida</traducao>
+	<original>Selecione a Empreza</original>
+    </termo>
+    <termo>
+	<id>500</id>
+	<traducao>Erro ba halot Empreza</traducao>
+	<original>Erro ao salvar Empreza</original>
+    </termo>
+    <termo>
+	<id>501</id>
+	<traducao>Erro ba sai Empreza</traducao>
+	<original>Erro ao remover Empreza</original>
+    </termo>
+    <termo>
+	<id>502</id>
+	<traducao>Erro ba lista registrus</traducao>
+	<original>Erro ao listar registros</original>
+    </termo>
+    <termo>
+	<id>503</id>
+	<traducao>Hili participante.</traducao>
+	<original>Selecione o participante.</original>
+    </termo>
+    <termo>
+	<id>504</id>
+	<traducao>Iha partisipante barak.</traducao>
+	<original>Ultrapassou total de alunos.</original>
+    </termo>
+    <termo>
+	<id>505</id>
+	<traducao>Turma remata diak</traducao>
+	<original>Turma finalizada com sucesso</original>
+    </termo>
+    <termo>
+	<id>506</id>
+	<traducao>Sick</traducao>
+	<original>Sick</original>
+    </termo>
+    <termo>
+	<id>507</id>
+	<traducao>Permission</traducao>
+	<original>Permission</original>
+    </termo>
+    <termo>
+	<id>508</id>
+	<traducao>Absence</traducao>
+	<original>Absence</original>
+    </termo>
+    <termo>
+	<id>509</id>
+	<traducao>Present</traducao>
+	<original>Present</original>
+    </termo>
+    <termo>
+	<id>510</id>
+	<traducao>Present in %</traducao>
+	<original>Present in %</original>
+    </termo>
+    <termo>
+	<id>511</id>
+	<traducao>Tenki preense Sick</traducao>
+	<original>Preencha o Sick</original>
+    </termo>
+    <termo>
+	<id>512</id>
+	<traducao>Tenki preense Permission</traducao>
+	<original>Preencha o Permission</original>
+    </termo>
+    <termo>
+	<id>513</id>
+	<traducao>Tenki preense Absence</traducao>
+	<original>Preencha o Absence</original>
+    </termo>
+    <termo>
+	<id>514</id>
+	<traducao>I - Application</traducao>
+	<original>I - Application</original>
+    </termo>
+    <termo>
+	<id>515</id>
+	<traducao>II - Participation</traducao>
+	<original>II - Participation</original>
+    </termo>
+    <termo>
+	<id>516</id>
+	<traducao>Final Score</traducao>
+	<original>Final Score</original>
+    </termo>
+    <termo>
+	<id>517</id>
+	<traducao>Tenki preense Application</traducao>
+	<original>Preencha  Application</original>
+    </termo>
+    <termo>
+	<id>518</id>
+	<traducao>Participation</traducao>
+	<original>Participation</original>
+    </termo>
+    <termo>
+	<id>519</id>
+	<traducao>Hare Test Class ba participantes hotu-hotu</traducao>
+	<original>Verifique o Test Class para todos os participantes</original>
+    </termo>
+    <termo>
+	<id>520</id>
+	<traducao>Hare Practical Training ba participantes hotu-hotu</traducao>
+	<original>Verifique o Practical Training para todos os participantes</original>
+    </termo>
+    <termo>
+	<id>521</id>
+	<traducao>Hare Attendence participantes hotu-hotu</traducao>
+	<original>Verifique o Attendence para todos os participantes</original>
+    </termo>
+    <termo>
+	<id>522</id>
+	<traducao>I - Pre-Test</traducao>
+	<original>I - Pre-Test</original>
+    </termo>
+    <termo>
+	<id>523</id>
+	<traducao>II - Final Test</traducao>
+	<original>II - Final Test</original>
+    </termo>
+    <termo>
+	<id>524</id>
+	<traducao>III - Understanding</traducao>
+	<original>III - Understanding</original>
+    </termo>
+    <termo>
+	<id>525</id>
+	<traducao>Tenki preense Pre-test</traducao>
+	<original>Preencha o Pre-teste</original>
+    </termo>
+    <termo>
+	<id>526</id>
+	<traducao>Tenki preense Final test</traducao>
+	<original>Preencha o Final teste</original>
+    </termo>
+    <termo>
+	<id>527</id>
+	<traducao>Tenki preense Understanding</traducao>
+	<original>Preencha o Understanding</original>
+    </termo>
+    <termo>
+	<id>528</id>
+	<traducao>Practical Training</traducao>
+	<original>Practical Training</original>
+    </termo>
+    <termo>
+	<id>529</id>
+	<traducao>Attendance</traducao>
+	<original>Attendance</original>
+    </termo>
+    <termo>
+	<id>530</id>
+	<traducao>Naran Kompletu</traducao>
+	<original>Nome Completo</original>
+    </termo>
+    <termo>
+	<id>531</id>
+	<traducao>Erro ba buka Attendence</traducao>
+	<original>Erro ao buscar Attendence</original>
+    </termo>
+    <termo>
+	<id>532</id>
+	<traducao>Erro ba buka pracitcal training</traducao>
+	<original>Erro ao buscar pracitcal training</original>
+    </termo>
+    <termo>
+	<id>533</id>
+	<traducao>Pass</traducao>
+	<original>Passou</original>
+    </termo>
+    <termo>
+	<id>534</id>
+	<traducao>Fail</traducao>
+	<original>Falhou</original>
+    </termo>
+    <termo>
+	<id>535</id>
+	<traducao>Labele save. Iha rejistu Cert. no tiha ona</traducao>
+	<original>Labele save. Iha rejistu Cert. no tiha ona</original>
+    </termo>
+    <termo>
+	<id>536</id>
+	<traducao>Amendment</traducao>
+	<original>Amendment</original>
+    </termo>
+    <termo>
+	<id>537</id>
+	<traducao>Ita tenki preense Valor Kontraktu</traducao>
+	<original>Ita tenki preense Valor Kontraktu</original>
+    </termo>
+    <termo>
+	<id>538</id>
+	<traducao>Valor foun</traducao>
+	<original>Valor foun</original>
+    </termo>
+    <termo>
+	<id>539</id>
+	<traducao>Tenki preense Data Remata Foun</traducao>
+	<original>Tenki preense Data Remata Foun</original>
+    </termo>
+    <termo>
+	<id>540</id>
+	<traducao>Data amendment</traducao>
+	<original>Data amendment</original>
+    </termo>
+    <termo>
+	<id>541</id>
+	<traducao>Tenki preense data amendment</traducao>
+	<original>Tenki preense data amendment</original>
+    </termo>
+    <termo>
+	<id>542</id>
+	<traducao>Detallamentu</traducao>
+	<original>Detallamentu</original>
+    </termo>
+     <termo>
+	<id>543</id>
+	<traducao>Tenki preense detallamentu</traducao>
+	<original>Tenki preense detallamentu</original>
+    </termo>
+     <termo>
+	<id>544</id>
+	<traducao>Data Remata foun</traducao>
+	<original>Data Remata foun</original>
+    </termo>
+    <termo>
+	<id>545</id>
+	<traducao>Ita tenki preense Data Remata</traducao>
+	<original>Ita tenki preense Data Remata</original>
+    </termo>
+    <termo>
+	<id>546</id>
+	<traducao>Valor Original</traducao>
+	<original>Valor Original</original>
+    </termo>
+     <termo>
+	<id>547</id>
+	<traducao>Labele save. Iha Amendment hanesa ne'e tiha ona</traducao>
+	<original>Labele save. Iha Amendment hanesa ne'e tiha ona</original>
+    </termo>
+     <termo>
+	<id>548</id>
+	<traducao>Relatoriu Treinamentu</traducao>
+	<original>Relatoriu Treinamento</original>
+    </termo>
+     <termo>
+	<id>549</id>
+	<traducao>Periudu Específico</traducao>
+	<original>Período Específico</original>
+    </termo>
+     <termo>
+	<id>550</id>
+	<traducao>Data remata</traducao>
+	<original>Data final</original>
+    </termo>
+     <termo>
+	<id>551</id>
+	<traducao>Turma específica</traducao>
+	<original>Turma específica</original>
+    </termo>
+     <termo>
+	<id>552</id>
+	<traducao>Tenki preense ID ba turma</traducao>
+	<original>Preencha o ID da turma</original>
+    </termo>
+     <termo>
+	<id>553</id>
+	<traducao>Relatoriu nivel 1 -  Summary</traducao>
+	<original>Relatoriu nivel 1 -  Summary</original>
+    </termo>
+     <termo>
+	<id>554</id>
+	<traducao>Treinadores</traducao>
+	<original>Treinadores</original>
+    </termo>
+     <termo>
+	<id>555</id>
+	<traducao>Pass rate</traducao>
+	<original>Pass rate</original>
+    </termo>
+     <termo>
+	<id>556</id>
+	<traducao>Empreza em treinamentus</traducao>
+	<original>Empreza em treinamentos</original>
+    </termo>
+     <termo>
+	<id>557</id>
+	<traducao>Relatoriu nivel 2 -  Boot</traducao>
+	<original>Relatoriu nivel 2 -  Detalhado</original>
+    </termo>
+     <termo>
+	<id>558</id>
+	<traducao>Turmas</traducao>
+	<original>Turmas</original>
+    </termo>
+     <termo>
+	<id>559</id>
+	<traducao>Relatoriu nivel 3 -  Listas</traducao>
+	<original>Relatoriu nivel 3 -  Listas</original>
+    </termo>
+     <termo>
+	<id>560</id>
+	<traducao>Lista Treinamentu</traducao>
+	<original>Lista Treinamento</original>
+    </termo>
+     <termo>
+	<id>561</id>
+	<traducao>Lista Score Classroom</traducao>
+	<original>Lista Score Classroom</original>
+    </termo>
+     <termo>
+	<id>562</id>
+	<traducao>Lista Attendance</traducao>
+	<original>Lista Attendance</original>
+    </termo>
+     <termo>
+	<id>563</id>
+	<traducao>Lista participantes</traducao>
+	<original>Lista participantes</original>
+    </termo>
+     <termo>
+	<id>564</id>
+	<traducao>Lista Practical Score</traducao>
+	<original>Lista Score Prática</original>
+    </termo>
+     <termo>
+	<id>565</id>
+	<traducao>Lista empreza iha treinamentu</traducao>
+	<original>Lista Empreza em treinamento</original>
+    </termo>
+     <termo>
+	<id>566</id>
+	<traducao>Lista Final Assessment</traducao>
+	<original>Lista Final Assessment</original>
+    </termo>
+     <termo>
+	<id>567</id>
+	<traducao>Summary treinamentu</traducao>
+	<original>Summary treinamento</original>
+    </termo>
+     <termo>
+	<id>568</id>
+	<traducao>to'o</traducao>
+	<original>até</original>
+    </termo>
+     <termo>
+	<id>569</id>
+	<traducao>Data sai dadus</traducao>
+	<original>Data saida de dados</original>
+    </termo>
+     <termo>
+	<id>570</id>
+	<traducao>Partisipante Hira</traducao>
+	<original>Quantidade participantes</original>
+    </termo>
+     <termo>
+	<id>571</id>
+	<traducao>Hira pass</traducao>
+	<original>Quantidade aprovados</original>
+    </termo>
+     <termo>
+	<id>572</id>
+	<traducao>Pass</traducao>
+	<original>Aprovados</original>
+    </termo>
+     <termo>
+	<id>573</id>
+	<traducao>hira fails</traducao>
+	<original>Quantidade reprovados</original>
+    </termo>
+     <termo>
+	<id>574</id>
+	<traducao>Fails</traducao>
+	<original>Reprovados</original>
+    </termo>
+    <termo>
+	<id>575</id>
+	<traducao>Print</traducao>
+	<original>Imprimir</original>
+    </termo>
+    <termo>
+	<id>576</id>
+	<traducao>Rai PDF</traducao>
+	<original>Gerar PDF</original>
+    </termo>
+    <termo>
+	<id>577</id>
+	<traducao>Rai DOC</traducao>
+	<original>Gerar DOC</original>
+    </termo>
+    <termo>
+	<id>578</id>
+	<traducao>Rai EXCEL</traducao>
+	<original>Gerar EXCEL</original>
+    </termo>
+    <termo>
+	<id>579</id>
+	<traducao>Taka</traducao>
+	<original>Fechar</original>
+    </termo>
+    <termo>
+	<id>580</id>
+	<traducao>Treinador</traducao>
+	<original>Treinador</original>
+    </termo>
+    <termo>
+	<id>581</id>
+	<traducao>Relatoriu Numeru empreza iha treinamentu</traducao>
+	<original>Relatoriu Numero Empreza em treinamento</original>
+    </termo>
+    <termo>
+	<id>582</id>
+	<traducao>Relatoriu Grupu tinan participante</traducao>
+	<original>Relatoriu Grupo idade participante</original>
+    </termo>
+    <termo>
+	<id>583</id>
+	<traducao>Relatoriu Quantidade de participantes</traducao>
+	<original>Relatoriu Quantidade de participantes</original>
+    </termo>
+    <termo>
+	<id>584</id>
+	<traducao>Relatoriu Numeru participante distritu</traducao>
+	<original>Relatoriu Numero participante distrito</original>
+    </termo>
+    <termo>
+	<id>585</id>
+	<traducao>Pass</traducao>
+	<original>Pass</original>
+    </termo>
+    <termo>
+	<id>586</id>
+	<traducao>Fail</traducao>
+	<original>Fail</original>
+    </termo>
+    <termo>
+	<id>587</id>
+	<traducao>Resultadu Relatoriu Participante liu Sexu</traducao>
+	<original>Resultado Relatoriu Participante por Sexo</original>
+    </termo>
+    <termo>
+	<id>588</id>
+	<traducao>Resultadu Relatoriu Final Assessment</traducao>
+	<original>Resultado Relatoriu Final Assessment</original>
+    </termo>
+    <termo>
+	<id>589</id>
+	<traducao>Test Classroom</traducao>
+	<original>Test Classroom</original>
+    </termo>
+    <termo>
+	<id>590</id>
+	<traducao>Resultadu Relatoriu Attendance</traducao>
+	<original>Resultado Relatoriu Attendance</original>
+    </termo>
+    <termo>
+	<id>591</id>
+	<traducao>Resultadu Relatoriu Participantes</traducao>
+	<original>Resultado Relatoriu Participantes</original>
+    </termo>
+    <termo>
+	<id>592</id>
+	<traducao>Resultadu Relatoriu Score Classroom</traducao>
+	<original>Resultado Relatoriu Score Classroom</original>
+    </termo>
+    <termo>
+	<id>593</id>
+	<traducao>Resultadu Relatoriu Practical Training</traducao>
+	<original>Resultado Relatoriu Practical Training</original>
+    </termo>
+    <termo>
+	<id>594</id>
+	<traducao>Resultadu Relatoriu lista Treinamentu</traducao>
+	<original>Resultado Relatoriu lista Treinamento</original>
+    </termo>
+    <termo>
+	<id>595</id>
+	<traducao>Aumenta turma</traducao>
+	<original>Adiciona turma</original>
+    </termo>
+    <termo>
+	<id>596</id>
+	<traducao>Equipamentu</traducao>
+	<original>Equipamento</original>
+    </termo>
+    <termo>
+	<id>597</id>
+	<traducao>Tenki Preense naran equipamentu</traducao>
+	<original>Preencha o nome do equipamento</original>
+    </termo>
+    <termo>
+	<id>598</id>
+	<traducao>Naran equipamentu</traducao>
+	<original>Nome do equipamento</original>
+    </termo>
+    <termo>
+	<id>599</id>
+	<traducao>Lista Equipamentu</traducao>
+	<original>Lista de Equipamentos</original>
+    </termo>
+    <termo>
+	<id>600</id>
+	<traducao>Asset</traducao>
+	<original>Asset</original>
+    </termo>
+    <termo>
+	<id>601</id>
+	<traducao>Hakarak sai equipamentu ne'e</traducao>
+	<original>Tem certeza que deseja apagar esse equipamento</original>
+    </termo>
+    <termo>
+	<id>602</id>
+	<traducao>Kontraktu uluk</traducao>
+	<original>Contrato anterior</original>
+    </termo>
+    <termo>
+	<id>603</id>
+	<traducao>Tipu kontraktu</traducao>
+	<original>Tipo de contrato</original>
+    </termo>
+    <termo>
+	<id>604</id>
+	<traducao>Tenki Preense tipu kontraktu</traducao>
+	<original>Preencha o tipo de contrato</original>
+    </termo>
+    <termo>
+	<id>605</id>
+	<traducao>Total kontraktu</traducao>
+	<original>Total contrato</original>
+    </termo>
+    <termo>
+	<id>606</id>
+	<traducao>Tenki Preense total kontraktu</traducao>
+	<original>Preencha o total contrato</original>
+    </termo>
+    <termo>
+	<id>607</id>
+	<traducao>Tenki Preense Naran Kliente</traducao>
+	<original>Preencha o nome do cliente</original>
+    </termo>
+    <termo>
+	<id>608</id>
+	<traducao>Periudu</traducao>
+	<original>Período</original>
+    </termo>
+    <termo>
+	<id>609</id>
+	<traducao>Hakarak sai kontraktu ne'e</traducao>
+	<original>Tem certeza que deseja apagar esse contrato</original>
+    </termo>
+    <termo>
+	<id>610</id>
+	<traducao>Sistema</traducao>
+	<original>Sistema</original>
+    </termo>
+    <termo>
+	<id>611</id>
+	<traducao>Lista Full Course</traducao>
+	<original>Lista Full Course</original>
+    </termo>
+    <termo>
+	<id>612</id>
+	<traducao>Rezultado Relatoriu Lista Kurso</traducao>
+	<original>Resultado Relatoriu Course List</original>
+    </termo>
+    <termo>
+	<id>613</id>
+	<traducao>Fotos</traducao>
+	<original>Imagens</original>
+    </termo>
+    <termo>
+	<id>614</id>
+	<traducao>Dokumentu</traducao>
+	<original>Documento</original>
+    </termo>
+    <termo>
+	<id>615</id>
+	<traducao>Hili dokumentu</traducao>
+	<original>Selecione o document</original>
+    </termo>
+    <termo>
+	<id>616</id>
+	<traducao>Sai Dokumento</traducao>
+	<original>Remove Document</original>
+    </termo>
+    <termo>
+	<id>617</id>
+	<traducao>Hare Dokumento</traducao>
+	<original>View Document</original>
+    </termo>
+    <termo>
+	<id>618</id>
+	<traducao>Snapshot</traducao>
+	<original>Snapshot</original>
+    </termo>
+    <termo>
+	<id>619</id>
+	<traducao>Hili foto</traducao>
+	<original>Selecione a imagem</original>
+    </termo>
+    <termo>
+	<id>620</id>
+	<traducao>Aumenta</traducao>
+	<original>Adicionar</original>
+    </termo>
+    <termo>
+	<id>621</id>
+	<traducao>Reference</traducao>
+	<original>Reference</original>
+    </termo>
+    <termo>
+	<id>622</id>
+	<traducao>Hili referensia</traducao>
+	<original>Selecione a referência</original>
+    </termo>
+    <termo>
+	<id>623</id>
+	<traducao>Baseline</traducao>
+	<original>Baseline</original>
+    </termo>
+    <termo>
+	<id>624</id>
+	<traducao>Endline</traducao>
+	<original>Endline</original>
+    </termo>
+    <termo>
+	<id>625</id>
+	<traducao>Snapshot Reference</traducao>
+	<original>Snapshot Reference</original>
+    </termo>
+    <termo>
+	<id>626</id>
+	<traducao>Road location</traducao>
+	<original>Road location</original>
+    </termo>
+    <termo>
+	<id>627</id>
+	<traducao>Hili Road location</traducao>
+	<original>Selecione a Road location</original>
+    </termo>
+    <termo>
+	<id>628</id>
+	<traducao>Road Code</traducao>
+	<original>Road Code</original>
+    </termo>
+    <termo>
+	<id>629</id>
+	<traducao>Tenki informa code</traducao>
+	<original>Preencha o code</original>
+    </termo>
+    <termo>
+	<id>630</id>
+	<traducao>Bele foto deit</traducao>
+	<original>Somente imagens são permitidas</original>
+    </termo>
+    <termo>
+	<id>631</id>
+	<traducao>Erro ba halao upload ba ficheiro</traducao>
+	<original>Erro ao fazer upload de arquivo</original>
+    </termo>
+    <termo>
+	<id>632</id>
+	<traducao>Bele PDF deit</traducao>
+	<original>Somente arquivo PDF é permitido</original>
+    </termo>
+    <termo>
+	<id>633</id>
+	<traducao>La bele hili mais que foto 10</traducao>
+	<original>Só pode selecionar no máximo 10 imagens</original>
+    </termo>
+    <termo>
+	<id>634</id>
+	<traducao>Erro ba halao upload ba foto.</traducao>
+	<original>Erro ao realizar upload de imagem.</original>
+    </termo>
+    <termo>
+	<id>635</id>
+	<traducao>Hakarak sai foto ne'e</traducao>
+	<original>Deseja remover esta imagem</original>
+    </termo>
+    <termo>
+	<id>636</id>
+	<traducao>Hakarak sai dokumentu ne'e</traducao>
+	<original>Deseja remover o documento atual</original>
+    </termo>
+    <termo>
+	<id>637</id>
+	<traducao>Erro ba halao upload ba dokumentu.</traducao>
+	<original>Erro ao realizar upload do documento.</original>
+    </termo>
+    <termo>
+	<id>638</id>
+	<traducao>Erro ba buka dokumentu</traducao>
+	<original>Erro ao busca documento</original>
+    </termo>
+    <termo>
+	<id>639</id>
+	<traducao>Hakarak sai dokumentu</traducao>
+	<original>Deseja realmente remover o documento</original>
+    </termo>
+    <termo>
+	<id>640</id>
+	<traducao>Erro ba sai dokumentu</traducao>
+	<original>Erro ao remover documento</original>
+    </termo>
+    <termo>
+	<id>641</id>
+	<traducao>Overall Rankings</traducao>
+	<original>Overall Rankings</original>
+    </termo>
+    <termo>
+	<id>642</id>
+	<traducao>Tenki hare kriterio hotu-hotu</traducao>
+	<original>Tem que avaliar todos os critérios</original>
+    </termo>
+    <termo>
+	<id>643</id>
+	<traducao>Halot indikador diak</traducao>
+	<original>Indicadores salvos com sucesso</original>
+    </termo>
+    <termo>
+	<id>644</id>
+	<traducao>Erro ba buka indikador sira</traducao>
+	<original>Erro ao buscar indicatores</original>
+    </termo>
+    <termo>
+	<id>645</id>
+	<traducao>Health Services</traducao>
+	<original>Health Services</original>
+    </termo>
+    <termo>
+	<id>646</id>
+	<traducao>Education</traducao>
+	<original>Education</original>
+    </termo>
+    <termo>
+	<id>647</id>
+	<traducao>Market</traducao>
+	<original>Market</original>
+    </termo>
+    <termo>
+	<id>648</id>
+	<traducao>Preencha esse campo</traducao>
+	<original>Preencha esse campo</original>
+    </termo>
+    <termo>
+	<id>649</id>
+	<traducao>Selecione uma das formas de acesso a estrada</traducao>
+	<original>Selecione uma das formas de acesso a estrada</original>
+    </termo>
+    <termo>
+	<id>650</id>
+	<traducao>Adicione uma forma de acesso aos mercados</traducao>
+	<original>Adicione uma forma de acesso aos mercados</original>
+    </termo>
+    <termo>
+	<id>651</id>
+	<traducao>Contract Record</traducao>
+	<original>Contract Record</original>
+    </termo>
+    <termo>
+	<id>652</id>
+	<traducao>Contract Batch</traducao>
+	<original>Contract Batch</original>
+    </termo>
+    <termo>
+	<id>653</id>
+	<traducao>Selecione o contrato para exportação</traducao>
+	<original>Selecione o contrato para exportação</original>
+    </termo>
+    <termo>
+	<id>654</id>
+	<traducao>Selecione os contratos para exportação</traducao>
+	<original>Selecione os contratos para exportação</original>
+    </termo>
+    <termo>
+	<id>655</id>
+	<traducao>Selecione no máximo 10 contratos para exportação</traducao>
+	<original>Selecione no máximo 10 contratos para exportação</original>
+    </termo>
+    <termo>
+	<id>656</id>
+	<traducao>Relatorio ME</traducao>
+	<original>Relatorio ME</original>
+    </termo>
+    <termo>
+	<id>657</id>
+	<traducao>Lista Snapshot</traducao>
+	<original>Lista Snapshot</original>
+    </termo>
+    <termo>
+	<id>658</id>
+	<traducao>Selecione o Snapshot para gerar o relatório.</traducao>
+	<original>Selecione o Snapshot para gerar o relatório.</original>
+    </termo>
+    <termo>
+	<id>659</id>
+	<traducao>Relatório Snapshot</traducao>
+	<original>Relatório Snapshot</original>
+    </termo>
+    <termo>
+	<id>660</id>
+	<traducao>Lista</traducao>
+	<original>Lista</original>
+    </termo>
+    <termo>
+	<id>661</id>
+	<traducao>Selecione os contratos para gerar relatorio</traducao>
+	<original>Selecione os contratos para gerar relatorio</original>
+    </termo>
+    <termo>
+	<id>662</id>
+	<traducao>Relatorio Grupo idade beneficiario</traducao>
+	<original>Relatorio Grupo idade beneficiario</original>
+    </termo>
+    <termo>
+	<id>663</id>
+	<traducao>Relatorio Grupo Nivel Educação</traducao>
+	<original>Relatorio Grupo Nivel Educação</original>
+    </termo>
+    <termo>
+	<id>664</id>
+	<traducao>Relatorio Distrito Beneficiario</traducao>
+	<original>Relatorio Distrito Beneficiario</original>
+    </termo>
+    <termo>
+	<id>665</id>
+	<traducao>Relatorio Profissão Beneficiario</traducao>
+	<original>Relatorio Profissão Beneficiario</original>
+    </termo>
+    <termo>
+	<id>666</id>
+	<traducao>Relatorio Endereço Beneficiario</traducao>
+	<original>Relatorio Endereço Beneficiario</original>
+    </termo>
+    <termo>
+	<id>667</id>
+	<traducao>Resultado Relatorio Pagamento</traducao>
+	<original>Resultado Relatorio Pagamento</original>
+    </termo>
+    <termo>
+	<id>668</id>
+	<traducao>Questionnaire Config</traducao>
+	<original>Questionnaire Config</original>
+    </termo>
+    <termo>
+	<id>669</id>
+	<traducao>Questionnaire</traducao>
+	<original>Questionnaire</original>
+    </termo>
+    <termo>
+	<id>670</id>
+	<traducao>Título</traducao>
+	<original>Título</original>
+    </termo>
+    <termo>
+	<id>671</id>
+	<traducao>Título Questionnaire Config</traducao>
+	<original>Título Questionnaire Config</original>
+    </termo>
+    <termo>
+	<id>672</id>
+	<traducao>Preencha o título</traducao>
+	<original>Preencha o título</original>
+    </termo>
+    <termo>
+	<id>673</id>
+	<traducao>Perguntas</traducao>
+	<original>Perguntas</original>
+    </termo>
+    <termo>
+	<id>674</id>
+	<traducao>Pergunta texto</traducao>
+	<original>Pergunta texto</original>
+    </termo>
+    <termo>
+	<id>675</id>
+	<traducao>Pergunta opção</traducao>
+	<original>Pergunta opção</original>
+    </termo>
+    <termo>
+	<id>676</id>
+	<traducao>Obrigatório</traducao>
+	<original>Obrigatório</original>
+    </termo>
+    <termo>
+	<id>677</id>
+	<traducao>Label</traducao>
+	<original>Label</original>
+    </termo>
+    <termo>
+	<id>678</id>
+	<traducao>Multiplo</traducao>
+	<original>Multiplo</original>
+    </termo>
+    <termo>
+	<id>679</id>
+	<traducao>Tem que inserir ao menos uma pergunta</traducao>
+	<original>Tem que inserir ao menos uma pergunta</original>
+    </termo>
+    <termo>
+	<id>680</id>
+	<traducao>Tem que inserir ao menos uma opção para as perguntas</traducao>
+	<original>Tem que inserir ao menos uma opção para as perguntas</original>
+    </termo>
+    <termo>
+	<id>681</id>
+	<traducao>Deseja remover esta pergunta</traducao>
+	<original>Deseja remover esta pergunta</original>
+    </termo>
+    <termo>
+	<id>682</id>
+	<traducao>Deseja remover esta opção</traducao>
+	<original>Deseja remover esta opção</original>
+    </termo>
+    <termo>
+	<id>683</id>
+	<traducao>Valor já definido</traducao>
+	<original>Valor já definido</original>
+    </termo>
+    <termo>
+	<id>684</id>
+	<traducao>Selecione o questionario</traducao>
+	<original>Selecione o questionario</original>
+    </termo>
+    <termo>
+	<id>685</id>
+	<traducao>Identificador</traducao>
+	<original>Identificador</original>
+    </termo>
+    <termo>
+	<id>686</id>
+	<traducao>Relatorio Questionnaire</traducao>
+	<original>Relatorio Questionnaire</original>
+    </termo>
+    <termo>
+	<id>687</id>
+	<traducao>Contract Groups</traducao>
+	<original>Contract Groups</original>
+    </termo>
+    <termo>
+	<id>688</id>
+	<traducao>Contract Batch</traducao>
+	<original>Contract Batch</original>
+    </termo>
+    <termo>
+	<id>689</id>
+	<traducao>Selecione o batch para exportação</traducao>
+	<original>Selecione o batch para exportação</original>
+    </termo>
+    <termo>
+	<id>690</id>
+	<traducao>Selecione o snapshot para exportação</traducao>
+	<original>Selecione o snapshot para exportação</original>
+    </termo>
+    <termo>
+	<id>691</id>
+	<traducao>Rejistu kursu</traducao>
+	<original>Registro curso</original>
+    </termo>
+    <termo>
+	<id>692</id>
+	<traducao>Kursu</traducao>
+	<original>Curso</original>
+    </termo>
+    <termo>
+	<id>693</id>
+	<traducao>Akronimu</traducao>
+	<original>Acrônimo</original>
+    </termo>
+    <termo>
+	<id>694</id>
+	<traducao>Kursu nia naran</traducao>
+	<original>Nome do curso</original>
+    </termo>
+    <termo>
+	<id>695</id>
+	<traducao>Tenki prensi akronimu</traducao>
+	<original>Preencha o acrônimo</original>
+    </termo>
+    <termo>
+	<id>696</id>
+	<traducao>Kursu nia akronimu</traducao>
+	<original>Acrônimo do curso</original>
+    </termo>
+    <termo>
+	<id>697</id>
+	<traducao>Unidade kompetensia</traducao>
+	<original>Unidades de competência</original>
+    </termo>
+    <termo>
+	<id>698</id>
+	<traducao>Hili unidade kompetensia</traducao>
+	<original>Selecione as unidades de competência</original>
+    </termo>
+    <termo>
+	<id>699</id>
+	<traducao>Todas as unidades selecionadas já estão no curso</traducao>
+	<original>Todas as unidades selecionadas já estão no curso</original>
+    </termo>
+    <termo>
+	<id>700</id>
+	<traducao>Erro ao cadastrar unidades de competência</traducao>
+	<original>Erro ao cadastrar unidades de competência</original>
+    </termo>
+    <termo>
+	<id>701</id>
+	<traducao>Unidades de competência salvas com sucesso</traducao>
+	<original>Unidades de competência salvas com sucesso</original>
+    </termo>
+    <termo>
+	<id>702</id>
+	<traducao>Selecione as unidades para remover</traducao>
+	<original>Selecione as unidades para remover</original>
+    </termo>
+    <termo>
+	<id>703</id>
+	<traducao>Deseja realmente remover estas unidades?</traducao>
+	<original>Deseja realmente remover estas unidades?</original>
+    </termo>
+    <termo>
+	<id>704</id>
+	<traducao>Erro ao remover unidades</traducao>
+	<original>Erro ao remover unidades</original>
+    </termo>
+    <termo>
+	<id>705</id>
+	<traducao>Unidades de competência removidas com sucesso</traducao>
+	<original>Unidades de competência removidas com sucesso</original>
+    </termo>
+    <termo>
+	<id>706</id>
+	<traducao>Existe um curso com esse acrônimo cadastrado</traducao>
+	<original>Existe um curso com esse acrônimo cadastrado</original>
+    </termo>
+    <termo>
+	<id>707</id>
+	<traducao>Acreditado</traducao>
+	<original>Acreditado</original>
+    </termo>
+    <termo>
+	<id>708</id>
+	<traducao>Nome da competência</traducao>
+	<original>Nome da competência</original>
+    </termo>
+    <termo>
+	<id>709</id>
+	<traducao>Acrônimo da competência</traducao>
+	<original>Acrônimo da competência</original>
+    </termo>
+    <termo>
+	<id>710</id>
+	<traducao>Existe uma unidade de competência com esse acrônimo cadastrado</traducao>
+	<original>Existe uma unidade de competência com esse acrônimo cadastrado</original>
+    </termo>
+    <termo>
+	<id>711</id>
+	<traducao>Halo Opsionau</traducao>
+	<original>Opcional</original>
+    </termo>
+    <termo>
+	<id>712</id>
+	<traducao>Tipu</traducao>
+	<original>Tipo</original>
+    </termo>
+    <termo>
+	<id>713</id>
+	<traducao>Texto</traducao>
+	<original>Texto</original>
+    </termo>
+    <termo>
+	<id>714</id>
+	<traducao>Data</traducao>
+	<original>Data</original>
+    </termo>
+    <termo>
+	<id>715</id>
+	<traducao>Numerico</traducao>
+	<original>Numero</original>
+    </termo>
+    <termo>
+	<id>716</id>
+	<traducao>Monetario</traducao>
+	<original>Monetario</original>
+    </termo>
+    <termo>
+	<id>717</id>
+	<traducao>Hora</traducao>
+	<original>Hora</original>
+    </termo>
+    <termo>
+	<id>718</id>
+	<traducao>Data/Hora</traducao>
+	<original>Data/Hora</original>
+    </termo>
+    <termo>
+	<id>719</id>
+	<traducao>Haree iha relatoriu?</traducao>
+	<original>Visualiza relatorio?</original>
+    </termo>
+    <termo>
+	<id>720</id>
+	<traducao>Average</traducao>
+	<original>Average</original>
+    </termo>
+    <termo>
+	<id>721</id>
+	<traducao>Sum</traducao>
+	<original>Sum</original>
+    </termo>
+    <termo>
+	<id>721</id>
+	<traducao>Sum</traducao>
+	<original>Sum</original>
+    </termo>
+    <termo>
+	<id>722</id>
+	<traducao>Average/Sum</traducao>
+	<original>Average/Sum</original>
+    </termo>
+</language>

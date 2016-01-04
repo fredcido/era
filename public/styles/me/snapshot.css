@@ -1,0 +1,261 @@
+.forms_wrapper .general_form .forms {
+    border: 1px solid #CCCCCC;
+    float: left;
+    padding: 5px;
+    width: 100% !important;
+}
+.general_form .inputs {
+    width: 85% !important;
+}
+
+.search_form fieldset {
+    padding: 0 0 15px 0;
+    margin: 15px 0 0;
+}
+
+.input_wrapper {
+    width: 262px;
+}
+
+.medium_input{
+    width: 126px !important;
+}
+
+.short_input {
+    width: 70px !important;
+}
+
+.ranking {
+    width: 40px;
+    height: 40px;
+    float: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.large_input {
+    width: 500px !important;
+}
+
+.inputs ul li label{
+    text-align: right !important;
+}
+.button {
+   float: right;
+}
+
+.textarea_wrapper {
+    height: 68px;
+}
+
+#list-registros th {
+    background: #EDEAEA !important;
+}
+
+#list-registros {
+    overflow-x: auto;
+}
+
+.table_wrapper {
+    width: 890px;
+}
+
+.table_wrapper td, .table_wrapper th {
+    padding: 0 5px !important;
+}
+
+.gallery_inner {
+    width: auto !important;
+}
+
+.document-control h5 {
+    float: left;
+}
+
+.document-control .view-document {
+    background: url("../../layout/css/layout/loupe.gif") no-repeat scroll left center transparent !important;
+    margin-right: 10px;
+}
+
+.document-control .remove-document {
+    background: url("../../layout/css/layout/action4.gif") no-repeat scroll left center transparent !important;
+}
+
+#document-container {
+    display: none;
+}
+
+.iframe-document {
+    border: none;
+    width: 870px;
+    height: 800px;
+}
+
+#rankings {
+    width: 50%;
+    float: left;
+}
+
+.red-ranking {
+    background: #FCA4A4 !important;
+    color: #CC3B3B;
+    border: 1px solid #CC3B3B !important;
+    font-weight: bold !important;
+}
+
+.red-ranking a {
+    color: #CC3B3B;
+}
+
+.red-ranking span {
+    margin: 0;
+    height: 20px;
+    background: url("../../images/exclamation.png") center center no-repeat #CC3B3B;
+    display: block;
+}
+
+.yellow-ranking {
+    background: #FCF4C9 !important;
+    color: #C1AD45;
+    border: 1px solid #C1AD45 !important;
+    font-weight: bold !important;
+}
+
+.yellow-ranking a {
+    color: #C1AD45;
+}
+
+.yellow-ranking span {
+    margin: 0;
+    height: 20px;
+    background: url("../../images/warning.png") center center no-repeat #C1AD45;
+    display: block;
+}
+
+.green-ranking {
+    background: #CFF7AD !important;
+    color: #336D03;
+    border: 1px solid #336D03 !important;
+    font-weight: bold !important;
+}
+
+.green-ranking a {
+    color: #336D03 !important;
+}
+
+.green-ranking span {
+    margin: 0;
+    height: 20px;
+    background: url("../../images/accept.png") center center no-repeat #336D03;
+    display: block;
+}
+
+#overall-rankings {
+    display: none;
+}
+
+.table-rankings thead th {
+    text-align: center;
+}
+
+.table-rankings tbody td {
+    padding: 0 !important;
+}
+
+.table-rankings a {
+    width: 210px;
+    height: 100px;
+    padding: 0 5px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    display: block;
+    color: #000;
+    position: relative;
+    line-height: 15px;
+}
+
+.table-rankings a span {
+    margin: 0 -5px 20px;
+}
+
+.no-color {
+    background: none !important;
+    border: none !important;
+    color: #000 !important;
+    width: 212px !important;
+    height: 102px !important;
+}
+
+.no-color span {
+    visibility: hidden;
+}
+
+.total-score {
+    border: none;
+}
+
+.total-score td, .total-score th {
+    border: 1px solid;
+}
+
+.total-score input {
+    border: none;
+}
+
+.total-score * {
+    text-align: center !important;
+    margin: 0 auto;
+    float: none;
+}
+
+.textarea_wrapper {
+    height: 50px !important;
+    width: 674px !important;
+}
+
+.label-button {
+    float: left;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.large-labels label {
+    width: 240px !important;
+}
+
+.large-labels .inputs {
+    width: 70% !important;
+}
+
+.summary {
+    margin: 0 auto !important;
+}
+
+.summary td {
+    color: #828282 !important;
+    padding: 5px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.summary th {
+    padding: 5px;
+    color: #000;
+    font-size: 15px !important;
+}
+
+.container-report {
+    padding-top: 0 !important;
+}
+
+.table-rankings table td, .table-rankings table th {
+    border: 1px solid;
+    color: #000;
+}
+
+
+.container-report label {
+    width: auto !important;
+}

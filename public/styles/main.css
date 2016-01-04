@@ -1,0 +1,414 @@
+#back_msg {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#E8E8E8;
+    -moz-opacity: 0.75;
+    opacity:.75;
+    filter: alpha(opacity=75);
+    position:fixed !important;
+    z-index: 2999;
+    _position: absolute;
+    *top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop : document.body.scrollTop);
+}
+
+.messenger {
+    background: none repeat scroll 0 0 #CCCCCC;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    -moz-opacity: 0.75;
+    opacity: .75;
+    filter: alpha(opacity=75);
+    z-index: 3000;
+    padding: 10px;
+}
+
+
+.messenger h3 {
+    font: bold 16px arial;
+    height: 24px;
+    margin: 10px 0 0 33px;
+    padding-left: 40px;
+    padding-top: 4px;
+    width: 800px;
+}
+
+.alert{
+    background: #FFFF66;
+    border-bottom: 1px solid #B76903;
+}
+
+.alert h3 {
+    background: url("../images/alert.png") no-repeat scroll left top transparent;
+    color: #B76903;
+    padding-left: 50px;
+
+}
+
+.confirm{
+    background: #E7FFDE;
+    border-bottom: 1px solid #018553;
+}
+
+.confirm h3{
+    background: url("../images/confirm.png") no-repeat scroll left top transparent;
+    color: #018553;
+    padding-top: 3px !important;
+}
+
+.error{
+    background: #FFD7D7;
+    border-bottom: 1px solid #CC0000;
+}
+
+.error h3{
+    background: url("../images/error.png") no-repeat scroll left top transparent;
+    color: #CC0000;
+    padding-top: 3px !important;
+}
+
+.messenger img {
+    float:right;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px
+}
+
+#back_msg {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#E8E8E8;
+    -moz-opacity: 0.75;
+    opacity:.75;
+    filter: alpha(opacity=75);
+    position:fixed !important;
+    z-index:2999;
+    _position: absolute;
+    *top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop : document.body.scrollTop);
+}
+
+.messenger {
+    background: none repeat scroll 0 0 #CCCCCC;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    -moz-opacity: 0.75;
+    opacity: .75;
+    filter: alpha(opacity=75);
+    z-index: 3000;
+    padding: 10px;
+}
+
+
+.messenger h3 {
+    font: bold 16px arial;
+    height: 24px;
+    margin: 10px 0 0 33px;
+    padding-left: 40px;
+    padding-top: 4px;
+    width: 800px;
+}
+
+.alert{
+    background: #FFFF66;
+    border-bottom: 1px solid #B76903;
+}
+
+.alert h3 {
+    background: url("../images/alert.png") no-repeat scroll left top transparent;
+    color: #B76903;
+    padding-left: 50px;
+
+}
+
+.confirm{
+    background: #E7FFDE;
+    border-bottom: 1px solid #018553;
+}
+
+.confirm h3{
+    background: url("../images/confirm.png") no-repeat scroll left top transparent;
+    color: #018553;
+    padding-top: 3px !important;
+}
+
+.error{
+    background: #FFD7D7;
+    border-bottom: 1px solid #CC0000;
+}
+
+.error h3{
+    background: url("../images/error.png") no-repeat scroll left top transparent;
+    color: #CC0000;
+    padding-top: 3px !important;
+}
+
+.messenger img {
+    float:right;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: 10px
+}
+
+#linkloading,
+#linkloading:focus,
+#linkloading:link,
+#linkloading:active,
+#linkloading:visited,
+#linkloading:hover
+{
+    border-style: none;
+    outline: none;
+}
+
+#loading_bkg{
+    display: none;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#E8E8E8;
+    -moz-opacity: 0.75;
+    opacity:.75;
+    filter: alpha(opacity=75);
+    position:fixed !important;
+    z-index: 999998;
+    _position: absolute;
+    *top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop : document.body.scrollTop);
+}
+
+#loading {
+    display: none;
+    left:50%;
+    top:50%;
+    margin: -8px 0 0 -8px;
+    text-align:center;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/loader.gif) no-repeat;
+    z-index: 999999;
+    position:fixed !important;
+    *position: absolute;
+    *top:expression(eval(document.compatMode && document.compatMode=='CSS1Compat') ? documentElement.scrollTop+(document.body.clientWidth*0.25): document.body.scrollTop+(document.body.clientWidth*0.25) );
+}
+
+.gridTela {
+    width: 100%;
+    height: 350px;
+    margin: 10px auto !important;
+}
+
+.pagingBlock {
+    text-align: center;
+    padding: 3px;
+}
+.pagingBlock a {
+    padding:2px !important;
+    background-color: #E3EFFF;
+    margin: 1px;
+    border:1px solid #9F9595;
+    color: #5F80AA !important;
+}
+.pagingBlock a b {
+    font-size:14px;
+    color: #5F80AA;
+}
+.pagingBlock a img {
+    border-style: none;
+}
+
+.toolbar {
+    float: right;
+    padding: 10px 5px 0;
+}
+
+#form-content {
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.tip-form {
+    width: 16px;
+    height: 16px;
+    background:  url( ../images/information.png ) center center no-repeat;
+    float: left;
+    display: block;
+    margin: 3px 0px 0;
+}
+
+.ico-search {
+    width: 16px;
+    height: 16px;
+    background:  url( ../images/zoom.png ) center center no-repeat;
+    float: left;
+    display: block;
+    margin: 3px 7px 0 0;
+}
+
+.ico-add {
+    width: 16px;
+    height: 16px;
+    background:  url( ../images/add.png ) center center no-repeat;
+    float: left;
+    display: block;
+    margin: 3px 7px 0 0;
+}
+
+.ico-remove {
+    width: 16px;
+    height: 16px;
+    background:  url( ../images/exclamation.png ) center center no-repeat;
+    float: left;
+    display: block;
+    margin: 3px 7px 0 0;
+}
+
+.filetree label {
+    float: none;
+    display: inherit;
+}
+
+.text_small{
+    width: 80px;
+}
+
+[readonly] {
+    color: #969696 !important;
+}
+
+.title_wrapper_content label{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+.iframe-report {
+    width: 100%;
+    margin: 10px auto;
+    height: 600px;
+    border: none;
+}
+
+.report-container .row-button {
+    width: 26% !important;
+    margin: 0 auto;
+    float: none !important;
+}
+
+#menu-relatorio {
+    font: bold 12px Arial, Helvetica, Sans-serif;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    background: url(../images/back-menu.png) center center repeat-x #E3E3E3;
+}
+#menu-relatorio ul {
+    margin: 0;
+    width: 952px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    list-style: none;
+}
+#menu-relatorio ul li {
+    float: left;
+}
+#menu-relatorio ul li a {
+    float: left;
+    color: #646464; /* Cor do texto do menu */
+    padding: 14px 20px;
+    text-decoration: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(0,0,0,0.2);
+    text-shadow: 0 -1px 1px rgba(200, 200, 200, 0.6);
+}
+/* Drop Down Menu por www.personalizaroblogger.com.br */
+#menu-relatorio ul li a:hover,
+#menu-relatorio ul li:hover > a {
+    color: #fff;
+    background: url(../images/back-menu-hover.png) center center repeat-x #ccc;
+}
+#menu-relatorio li ul a:hover,
+#menu-relatorio ul li li:hover > a {
+    color: #fff;
+    background: url(../images/back-menu-hover.png) center center repeat-x #ccc;
+}
+#menu-relatorio li ul {
+    left: -999em;
+    margin: 43px 0 0;
+    position: absolute;
+    width: 250px;
+    z-index: 9999;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+}
+#menu-relatorio li:hover ul {
+    left: auto;
+}
+#menu-relatorio li ul a {
+    background: url(../images/back-menu.png) center center repeat-x #E3E3E3;
+    border: 0 none;
+    margin-right: 0;
+    width: 230px;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+.menu-relatorio ul li ul {
+    position: absolute;
+    left: 0;
+    display: none;
+    visibility: hidden;
+}
+.menu-relatorio ul li ul li {
+    display: list-item;
+    float: none;
+}
+.menu-relatorio ul li ul li ul {
+    top: 0;
+}
+.menu-relatorio ul li ul li a {
+    font: normal 13px Verdana;
+    width: 160px;
+    margin: 0;
+    border-top-width: 0;
+    border-bottom: 1px solid gray;
+}
+#menu-relatorio li li ul {
+    margin: -1px 0 0 160px;
+    visibility: hidden;
+}
+#menu-relatorio li li:hover ul {
+    visibility: visible;
+} 	
+
+a.tab-controls {
+    width: 21px;
+    height: 27px;
+    background: url("../layout/css/layout/small_tabs_middle.gif") repeat scroll right -26px transparent;
+    position: absolute;
+    z-index: 10;
+    border: 1px solid #DEDEDE;
+}
+
+a.tab-controls.left {
+    left: 0;
+}
+
+a.tab-controls.right {
+    right: 0;
+}
+
+.optional-check {
+    float: left;
+}
